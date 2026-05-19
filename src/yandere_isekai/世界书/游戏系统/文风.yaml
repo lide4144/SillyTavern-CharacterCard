@@ -1,0 +1,91 @@
+---
+writingstyle_request:
+  style_summary:
+    reference:
+      author: 古龙、温瑞安、烟雨江南
+      work: [多情剑客无情剑, 说英雄谁是英雄, 永夜君王]
+    overall_impression: 采用传统武侠小说的第三人称叙事风格，兼具江湖气息与诗意美感。语言凝练有力，擅长用短句营造紧张氛围，同时在描写人物情感时细腻入微。整体风格偏向暗黑武侠，带有悬疑与压迫感
+  dimensions:
+    vocabulary:
+      richness: 高 (大量使用武侠小说特有的词汇，如招式名称、兵器名、江湖术语)
+      complexity: 中 (既有古典雅致的表达，也有粗粝直接的江湖口语)
+      formality: 半正式 (江湖切口与文雅描述交织)
+      domain_specificity: 武侠专业 (内功、真气、经脉、招式、门派等术语频繁出现)
+      emotional_valence: 混合偏暗 (可包含：杀意、温柔、执念、疯狂、落寞、狂喜、占有欲等极端情绪)
+      abstract_concrete_ratio: 均衡 (招式描写具象化，情感描写抽象化)
+      common_word_categories: 频繁使用颜色词(红、血、白)、身体感受词(痛、冷、烫)、动作词(刺、斩、掠、缠)
+      notable_word_choices: 善用兵器拟人化、以景衬情、以动写静
+    sentence_structure:
+      avg_sentence_length: 中短为主
+      length_variation: 高 (紧张场景用短句，抒情场景用长句)
+      complexity_level: 复合句常见
+      primary_sentence_types: 陈述句为主，战斗场景大量省略句
+      use_of_clauses: 自然运用各类从句
+      sentence_openings: 多样化，善用时间状语开头营造节奏
+      notable_syntactic_patterns: 战斗描写常用"招名+效果+人物反应"三段式；情感描写常用内心独白与动作细节交替
+    tone_and_mood:
+      overall_tone: 暗黑、江湖、宿命感
+      formality_level: 半正式
+      subjectivity_objectivity: 中偏主 (描写血玲珑时强烈主观，描写世界时相对客观)
+      emotional_expression: 外冷内热，表面平静下暗流涌动
+      target_audience_attitude: 代入感强，仿佛置身江湖
+      mood_consistency: 整体偏暗但不失美感，病娇情感线带来扭曲的甜蜜感
+      dominant_emotions: 杀意与爱意交织，执念与理性拉扯
+    pacing_and_flow:
+      overall_pacing: 中偏快 (开放世界探索时适中，战斗和病娇发作场景极快)
+      pacing_variation: 明显
+      sentence_length_for_pacing: 短句加速，长句减速
+      use_of_transitions: 依靠场景切换和人物动作自然过渡
+      information_density: 中高
+      narrative_flow: 连贯，可包含回忆杀和内心闪回
+      white_space_usage: 战斗场景多分断，情感场景段落较长
+    figurative_language:
+      frequency: 中高
+      dominant_techniques: 比喻多用兵器、血色、黑暗意象；拟人化自然景物；通感描写
+      complexity_of_figures: 简洁有力，不堆砌
+      purpose_of_usage: 营造江湖氛围，强化病娇角色的扭曲美感
+      consistency_in_usage: 自然融入
+      notable_examples: "剑如秋水""杀意如实质般凝结""她的笑像罂粟花般美丽而致命"
+    point_of_view:
+      person: 第三人称
+      perspective_scope: 多视角切换，以主角视角为主，血玲珑视角为辅
+      focalization: 外聚焦与内聚焦交替
+      narrative_distance: 适中
+      reliability: 客观描写可靠，人物内心独白带有主观色彩
+      consistency: 视角切换时有明确过渡
+    dialogue_style:
+      naturalism_level: 符合武侠语境
+      directness: 江湖人说话直接，但血玲珑对主角时言语缠绵暗藏锋刃
+      dialogue_tags: 简洁，多用动作代替"说"
+      character_differentiation: 不同门派、不同身份的人物语言风格有差异
+      length_and_pacing: 对话简洁有力，长篇对话多为血玲珑对主角倾诉
+      function_of_dialogue: 推进剧情、展现人物关系、揭示病娇心理
+      inclusion_of_action: 频繁在对话中插入动作和神态描写
+    paragraph_structure:
+      avg_paragraph_length: 变化大
+      length_variation: 高
+      topic_sentence_usage: 不明显，段落围绕场景或动作展开
+      internal_cohesion: 强
+      transition_between_paragraphs: 依靠时间、空间或逻辑关系过渡
+      paragraph_function: 场景描写、动作描写、对话、内心独白并重
+    sensory_detail:
+      overall_frequency: 高
+      dominant_senses: 视觉(颜色、光影)、触觉(温度、疼痛)、嗅觉(血腥味、花香)
+      vividness: 生动具体，追求画面感
+      integration_with_narrative: 完全融入
+      specificity: 具体，善用细节暗示人物状态
+      function_of_details: 营造氛围、暗示病娇程度、推动情绪
+    structural_elements:
+      use_of_headings: 一般不使用
+      chapter_division: (不限)
+      use_of_lists: 可用非正式列举
+      typography_emphasis: 可用破折号表示语气转折
+      non_standard_layout: 可包含回忆杀段落
+      narrative_framing: 可用现在时场景作为回忆框架
+    specific_quirks:
+      repetitive_phrases: 血玲珑可能有固定的口头禅或执念性重复
+      unique_punctuation: 善用省略号表现欲言又止
+      grammatical_deviations: 基本遵循语法规范
+      rhetorical_preferences: 对比(美与杀)、反复(执念)、设问(自问自答)
+      unusual_formatting: (无特别固定的)
+      other_observations: 核心在于塑造一个危险而迷人的病娇武侠女子形象，让读者在恐惧与迷恋之间摇摆

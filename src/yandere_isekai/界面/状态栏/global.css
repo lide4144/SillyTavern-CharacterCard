@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+:root {
+  --c-blood: #8b0000;
+  --c-blood-light: #c41e3a;
+  --c-dark: #1a1a1a;
+  --c-charcoal: #2d2d2d;
+  --c-gold: #d4af37;
+  --c-gold-dim: #8a7020;
+  --c-parchment: #f5e6d3;
+  --c-ink: #1a1a1a;
+  --c-ash: #8b8680;
+  --font-wuxia: 'Noto Serif SC', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: var(--font-wuxia);
+}
