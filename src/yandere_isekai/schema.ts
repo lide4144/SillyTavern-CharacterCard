@@ -83,7 +83,7 @@ export const Schema = z.object({
         z.object({
           描述: z.string(),
           数量: z.coerce.number().transform(v => Math.max(v, 0)),
-          类型: z.enum(['武器', '防具', '丹药', '材料', '秘籍', '杂物']).prefault('杂物'),
+          类型: z.enum(['武器', '防具', '丹药', '材料', '秘籍', '杂物', '消耗品', '食物']).prefault('杂物'),
         }),
       )
       .transform(data => _.pickBy(data, ({ 数量 }) => 数量 > 0))
