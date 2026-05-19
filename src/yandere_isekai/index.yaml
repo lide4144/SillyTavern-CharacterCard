@@ -231,7 +231,7 @@
         ```
         <body>
         <script>
-        $('body').load('http://localhost:5500/SillyTavern-CharacterCard/dist/yandere_isekai/界面/状态栏/index.html')
+        $('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard/dist/yandere_isekai/界面/状态栏/index.html')
         </script>
         </body>
         ```
