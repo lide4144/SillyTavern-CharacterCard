@@ -1,0 +1,411 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "type": "string"
+        },
+        "当前地点": {
+          "type": "string"
+        },
+        "天气": {
+          "type": "string"
+        },
+        "区域信息": {
+          "type": "string"
+        },
+        "近期事务": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        }
+      },
+      "required": [
+        "当前时间",
+        "当前地点",
+        "天气",
+        "区域信息",
+        "近期事务"
+      ]
+    },
+    "主角": {
+      "type": "object",
+      "properties": {
+        "姓名": {
+          "type": "string"
+        },
+        "表面身份": {
+          "type": "string"
+        },
+        "真实身份": {
+          "type": "string"
+        },
+        "六维": {
+          "type": "object",
+          "properties": {
+            "根骨": {
+              "type": "number"
+            },
+            "悟性": {
+              "type": "number"
+            },
+            "身法": {
+              "type": "number"
+            },
+            "臂力": {
+              "type": "number"
+            },
+            "定力": {
+              "type": "number"
+            },
+            "福缘": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "根骨",
+            "悟性",
+            "身法",
+            "臂力",
+            "定力",
+            "福缘"
+          ]
+        },
+        "武学": {
+          "type": "object",
+          "properties": {
+            "内功": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "武功名"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "层数": {
+                    "type": "number"
+                  },
+                  "描述": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "层数",
+                  "描述"
+                ]
+              }
+            },
+            "外功": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "武功名"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "熟练度": {
+                    "type": "number"
+                  },
+                  "描述": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "熟练度",
+                  "描述"
+                ]
+              }
+            },
+            "轻功": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "武功名"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "熟练度": {
+                    "type": "number"
+                  },
+                  "描述": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "熟练度",
+                  "描述"
+                ]
+              }
+            }
+          },
+          "required": [
+            "内功",
+            "外功",
+            "轻功"
+          ]
+        },
+        "状态": {
+          "type": "object",
+          "properties": {
+            "气血": {
+              "type": "number"
+            },
+            "气血上限": {
+              "type": "number"
+            },
+            "内力": {
+              "type": "number"
+            },
+            "内力上限": {
+              "type": "number"
+            },
+            "伤势": {
+              "type": "string"
+            },
+            "中毒": {
+              "type": "string"
+            },
+            "饱腹": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "气血",
+            "气血上限",
+            "内力",
+            "内力上限",
+            "伤势",
+            "中毒",
+            "饱腹"
+          ]
+        },
+        "装备": {
+          "type": "object",
+          "properties": {
+            "武器": {
+              "type": "string"
+            },
+            "防具": {
+              "type": "string"
+            },
+            "饰品": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "武器",
+            "防具",
+            "饰品"
+          ]
+        },
+        "物品栏": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        },
+        "名望": {
+          "type": "number"
+        },
+        "善恶值": {
+          "type": "number"
+        },
+        "银两": {
+          "type": "number"
+        },
+        "秘密暴露度": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "姓名",
+        "表面身份",
+        "真实身份",
+        "六维",
+        "武学",
+        "状态",
+        "装备",
+        "物品栏",
+        "名望",
+        "善恶值",
+        "银两",
+        "秘密暴露度"
+      ]
+    },
+    "NPC": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "description": "NPC姓名"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "身份": {
+            "type": "string"
+          },
+          "位置": {
+            "type": "string"
+          },
+          "好感度": {
+            "type": "number"
+          },
+          "关系": {
+            "type": "string"
+          },
+          "状态": {
+            "type": "string"
+          },
+          "已知秘密": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "身份",
+          "位置",
+          "好感度",
+          "关系",
+          "状态",
+          "已知秘密"
+        ]
+      }
+    },
+    "地图": {
+      "type": "object",
+      "properties": {
+        "已探索区域": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "当前区域详情": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "已探索区域",
+        "当前区域详情"
+      ]
+    },
+    "任务": {
+      "type": "object",
+      "properties": {
+        "主线": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "任务名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "阶段": {
+                "type": "string"
+              },
+              "描述": {
+                "type": "string"
+              },
+              "目标": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "阶段",
+              "描述",
+              "目标"
+            ]
+          }
+        },
+        "支线": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "任务名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "目标": {
+                "type": "string"
+              },
+              "奖励": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "描述",
+              "目标",
+              "奖励"
+            ]
+          }
+        },
+        "随机事件": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事件名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "状态": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "描述",
+              "状态"
+            ]
+          }
+        }
+      },
+      "required": [
+        "主线",
+        "支线",
+        "随机事件"
+      ]
+    }
+  },
+  "required": [
+    "世界",
+    "主角",
+    "NPC",
+    "地图",
+    "任务"
+  ]
+}
