@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/character.zh.json
-头像: 头像
+头像: null
 版本: 1.0.0
-作者: ''
-备注: ''
+作者: 青空莉想做舞台少女的狗
+备注: '病娇母女盖饭主题角色卡，李德的妹妹和妈妈'
 
 第一条消息:
   - 文件: 第一条消息/0
@@ -21,7 +21,7 @@
     内容: ''
   - &立即事件
     启用: true
-    插入位置:
+    激活策略:
       类型: 指定深度
       角色: 系统
       深度: 0
@@ -36,51 +36,6 @@
 
 世界书名称: 与角色卡名称相同
 条目:
-  - 名称: 武侠开放世界文风
-    启用: true
-    激活策略:
-      类型: 蓝灯
-    插入位置:
-      类型: 指定深度
-      角色: 系统
-      深度: 0
-      顺序: 14720
-    激活概率: 100
-    递归:
-      不可被其他条目激活: true
-      不可激活其他条目: true
-    文件: 世界书/游戏系统/文风
-
-  - 名称: 开放世界规则
-    启用: true
-    激活策略:
-      类型: 蓝灯
-    插入位置:
-      类型: 指定深度
-      角色: 系统
-      深度: 0
-      顺序: 14720
-    激活概率: 100
-    递归:
-      不可被其他条目激活: true
-      不可激活其他条目: true
-    文件: 世界书/游戏系统/开放世界规则
-
-  - 名称: 战斗系统
-    启用: true
-    激活策略:
-      类型: 蓝灯
-    插入位置:
-      类型: 指定深度
-      角色: 系统
-      深度: 0
-      顺序: 14720
-    激活概率: 100
-    递归:
-      不可被其他条目激活: true
-      不可激活其他条目: true
-    文件: 世界书/游戏系统/战斗系统
-
   - 文件夹: 变量
     条目:
       - 名称: ===变量开始===
@@ -148,7 +103,7 @@
       - 名称: ===角色开始===
         <<: *分隔符
 
-      - 名称: 血玲珑角色详情
+      - 名称: 角色详情
         启用: true
         激活策略:
           类型: 蓝灯
@@ -158,9 +113,9 @@
         递归:
           不可被其他条目激活: true
           不可激活其他条目: true
-        文件: 世界书/角色/血玲珑详情
+        文件: 世界书/角色/角色详情
 
-      - 名称: 血玲珑角色阶段
+      - 名称: 角色阶段
         启用: true
         激活策略:
           类型: 蓝灯
@@ -169,7 +124,10 @@
           角色: 系统
           深度: 0
           顺序: 14720
-        文件: 世界书/角色/血玲珑阶段
+        递归:
+          不可被其他条目激活: true
+          不可激活其他条目: true
+        文件: 世界书/角色/角色阶段
 
       - 名称: ===角色结束===
         <<: *分隔符
@@ -231,7 +189,7 @@
         ```
         <body>
         <script>
-        $('body').load('http://localhost:5500/SillyTavern-CharacterCard/dist/yandere_isekai/界面/状态栏/index.html')
+        $('body').load('https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/病娇母女盖饭/界面/状态栏/index.html')
         </script>
         </body>
         ```
@@ -256,4 +214,15 @@
         启用: true
         类型: 脚本
         内容: |-
-          import 'http://localhost:5500/SillyTavern-CharacterCard/dist/yandere_isekai/脚本/变量结构/index.js';
+          import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/病娇母女盖饭/脚本/变量结构/index.js';
+
+      - 名称: 自动更新角色卡
+        id: 176b0b3c-b410-4373-8c81-8636a94a0839
+        启用: true
+        类型: 脚本
+        内容: |-
+          import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/自动更新角色卡/index.js';
+        数据:
+          角色卡名称: 病娇母女盖饭
+          角色卡链接: https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/病娇母女盖饭/病娇母女盖饭.png
+          更新日志链接: https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/病娇母女盖饭/更新日志.md
