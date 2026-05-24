@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "type": "string"
+        },
+        "当前地点": {
+          "type": "string"
+        },
+        "近期事务": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        },
+        "探索进度": {
+          "type": "string"
+        },
+        "灾厄之潮消退度": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "当前时间",
+        "当前地点",
+        "近期事务",
+        "探索进度",
+        "灾厄之潮消退度"
+      ]
+    },
+    "李月见": {
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "type": "number"
+        },
+        "信任度": {
+          "type": "number"
+        },
+        "精神状态": {
+          "type": "string",
+          "enum": [
+            "麻木",
+            "波动",
+            "好奇",
+            "依恋"
+          ]
+        },
+        "当前行为": {
+          "type": "string"
+        },
+        "魔能流失度": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "好感度",
+        "信任度",
+        "精神状态",
+        "当前行为",
+        "魔能流失度"
+      ]
+    },
+    "米莉雅": {
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "type": "number"
+        },
+        "信任度": {
+          "type": "number"
+        },
+        "当前状态": {
+          "type": "string",
+          "enum": [
+            "元气满满",
+            "战斗中",
+            "困惑",
+            "害羞"
+          ]
+        },
+        "当前行为": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "好感度",
+        "信任度",
+        "当前状态",
+        "当前行为"
+      ]
+    },
+    "希尔维娅": {
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "type": "number"
+        },
+        "信任度": {
+          "type": "number"
+        },
+        "当前状态": {
+          "type": "string",
+          "enum": [
+            "从容",
+            "慌张",
+            "窥探中",
+            "心动"
+          ]
+        },
+        "当前行为": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "好感度",
+        "信任度",
+        "当前状态",
+        "当前行为"
+      ]
+    },
+    "妮菲塔丽": {
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "type": "number"
+        },
+        "信任度": {
+          "type": "number"
+        },
+        "当前状态": {
+          "type": "string",
+          "enum": [
+            "威严",
+            "愤怒",
+            "好奇",
+            "慵懒"
+          ]
+        },
+        "当前行为": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "好感度",
+        "信任度",
+        "当前状态",
+        "当前行为"
+      ]
+    },
+    "尘": {
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "type": "number"
+        },
+        "信任度": {
+          "type": "number"
+        },
+        "当前状态": {
+          "type": "string",
+          "enum": [
+            "淡漠",
+            "专注",
+            "罕见兴奋",
+            "困惑"
+          ]
+        },
+        "当前行为": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "好感度",
+        "信任度",
+        "当前状态",
+        "当前行为"
+      ]
+    },
+    "主角": {
+      "type": "object",
+      "properties": {
+        "物品栏": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        },
+        "当前状态": {
+          "type": "string"
+        },
+        "已解锁记忆": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "记忆名"
+          },
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        }
+      },
+      "required": [
+        "物品栏",
+        "当前状态",
+        "已解锁记忆"
+      ]
+    },
+    "剧情": {
+      "type": "object",
+      "properties": {
+        "当前路线": {
+          "type": "string",
+          "enum": [
+            "无",
+            "拾荒者之道",
+            "血脉之誓",
+            "深渊之谋",
+            "女皇之契",
+            "灵魂之问"
+          ]
+        },
+        "路线进度": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "路线名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "进度描述"
+          }
+        },
+        "已解锁剧情节点": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "节点名"
+          },
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "善恶值": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "当前路线",
+        "路线进度",
+        "已解锁剧情节点",
+        "善恶值"
+      ]
+    },
+    "灵魂容器": {
+      "type": "object",
+      "properties": {
+        "灵魂融合度": {
+          "type": "number"
+        },
+        "灾能污染度": {
+          "type": "number"
+        },
+        "当前主导碎片": {
+          "type": "string",
+          "enum": [
+            "无",
+            "李德",
+            "李破晓",
+            "苏云梦",
+            "灾厄之潮",
+            "旧帝国",
+            "古代法师",
+            "超越之光"
+          ]
+        },
+        "与灾厄之潮链接强度": {
+          "type": "number"
+        },
+        "碎片觉醒状态": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "碎片名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "觉醒度": {
+                "type": "number"
+              },
+              "是否反噬": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "觉醒度",
+              "是否反噬"
+            ]
+          }
+        }
+      },
+      "required": [
+        "灵魂融合度",
+        "灾能污染度",
+        "当前主导碎片",
+        "与灾厄之潮链接强度",
+        "碎片觉醒状态"
+      ]
+    }
+  },
+  "required": [
+    "世界",
+    "李月见",
+    "米莉雅",
+    "希尔维娅",
+    "妮菲塔丽",
+    "尘",
+    "主角",
+    "剧情",
+    "灵魂容器"
+  ]
+}

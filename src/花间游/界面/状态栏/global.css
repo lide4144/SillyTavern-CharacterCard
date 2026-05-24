@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
+:root {
+  --c-rose: #ffe4e1;
+  --c-rose-dark: #ffb6c1;
+  --c-gold: #daa520;
+  --c-gold-light: #f0e68c;
+  --c-parchment: #fff8f0;
+  --c-ink: #4a3b3b;
+  --c-ink-light: #7a6b6b;
+  --c-danger: #dc143c;
+  --c-success: #228b22;
+  --c-warn: #ff8c00;
+  --font-serif: 'Noto Serif SC', serif;
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--c-ink);
+  background: transparent;
+}
+
+.stat-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #e0d5d5;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.phase-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.phase-未相识 { background: #e0e0e0; color: #666; }
+.phase-初识 { background: #c8e6c9; color: #2e7d32; }
+.phase-熟识 { background: #bbdefb; color: #1565c0; }
+.phase-暧昧 { background: #ffe0b2; color: #e65100; }
+.phase-亲密 { background: #f8bbd0; color: #c2185b; }
+.phase-沦陷 { background: #e1bee7; color: #7b1fa2; }

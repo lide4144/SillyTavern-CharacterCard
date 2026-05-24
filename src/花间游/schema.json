@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "default": "大周历 承平三年 春 三月初三 午时",
+          "type": "string"
+        },
+        "当前地点": {
+          "default": "百花谷 山门",
+          "type": "string"
+        },
+        "天气": {
+          "default": "晴",
+          "type": "string"
+        },
+        "区域信息": {
+          "default": "百花谷出口，桃花纷飞",
+          "type": "string"
+        },
+        "近期事务": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        }
+      }
+    },
+    "主角": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "体力": {
+          "default": 100,
+          "type": "number"
+        },
+        "内力": {
+          "default": 50,
+          "type": "number"
+        },
+        "花间值": {
+          "default": 85,
+          "type": "number"
+        },
+        "暴露度": {
+          "default": 0,
+          "type": "number"
+        },
+        "银两": {
+          "default": 200,
+          "type": "number"
+        },
+        "装备": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "武器": {
+              "default": "花间折扇",
+              "type": "string"
+            },
+            "防具": {
+              "default": "烟罗纱裙",
+              "type": "string"
+            },
+            "饰品": {
+              "default": "百花簪",
+              "type": "string"
+            }
+          }
+        },
+        "武功": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "武功名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "熟练度": {
+                "type": "number"
+              },
+              "描述": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "熟练度",
+              "描述"
+            ]
+          }
+        },
+        "物品栏": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        }
+      }
+    },
+    "必吃榜": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "description": "角色名"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "好感度": {
+            "default": 0,
+            "type": "number"
+          },
+          "亲密值": {
+            "default": 0,
+            "type": "number"
+          },
+          "攻略阶段": {
+            "default": "未相识",
+            "type": "string",
+            "enum": [
+              "未相识",
+              "初识",
+              "熟识",
+              "暧昧",
+              "亲密",
+              "沦陷"
+            ]
+          },
+          "关系": {
+            "default": "路人",
+            "type": "string"
+          },
+          "已攻略": {
+            "default": false,
+            "type": "boolean"
+          },
+          "特殊事件": {
+            "default": "无",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "任务": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "主线": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "任务名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "阶段": {
+                "type": "string"
+              },
+              "描述": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "阶段",
+              "描述"
+            ]
+          }
+        },
+        "支线": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "任务名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "目标": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "描述",
+              "目标"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
