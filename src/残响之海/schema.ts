@@ -13,6 +13,7 @@ export const Schema = z.object({
     精神状态: z.enum(['麻木', '波动', '好奇', '依恋']),
     当前行为: z.string(),
     魔能流失度: z.coerce.number().transform(v => _.clamp(v, 0, 100)),
+    关系阶段: z.string().describe('H或剧情后关系质变状态，例：能源提取程序→想知道明天→学会渴望'),
   }),
 
   米莉雅: z.object({
@@ -20,6 +21,7 @@ export const Schema = z.object({
     信任度: z.coerce.number().transform(v => _.clamp(v, 0, 100)),
     当前状态: z.enum(['元气满满', '战斗中', '困惑', '害羞']),
     当前行为: z.string(),
+    关系阶段: z.string().describe('H或剧情后关系质变状态，例：战斗伙伴→第一次被温柔触碰→学会哭泣'),
   }),
 
   希尔维娅: z.object({
@@ -27,6 +29,7 @@ export const Schema = z.object({
     信任度: z.coerce.number().transform(v => _.clamp(v, 0, 100)),
     当前状态: z.enum(['从容', '慌张', '窥探中', '心动']),
     当前行为: z.string(),
+    关系阶段: z.string().describe('H或剧情后关系质变状态，例：观测对象#48→不要打开的文件夹→第一次失控'),
   }),
 
   妮菲塔丽: z.object({
@@ -34,6 +37,7 @@ export const Schema = z.object({
     信任度: z.coerce.number().transform(v => _.clamp(v, 0, 100)),
     当前状态: z.enum(['威严', '愤怒', '好奇', '慵懒']),
     当前行为: z.string(),
+    关系阶段: z.string().describe('H或剧情后关系质变状态，例：臣民收藏→权力失效的恐惧与兴奋→第一次被看见'),
   }),
 
   尘: z.object({
@@ -41,6 +45,7 @@ export const Schema = z.object({
     信任度: z.coerce.number().transform(v => _.clamp(v, 0, 100)),
     当前状态: z.enum(['淡漠', '专注', '罕见兴奋', '困惑']),
     当前行为: z.string(),
+    关系阶段: z.string().describe('H或剧情后关系质变状态，例：研究对象→待进一步观测样本→删了重写'),
   }),
 
   主角: z.object({
