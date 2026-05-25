@@ -469,7 +469,7 @@
         ```
         <body>
         <script>
-        $('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard/dist/花间游/界面/状态栏/index.html')
+        $('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard@v0.0.12/dist/花间游/界面/状态栏/index.html')
         </script>
         </body>
         ```
@@ -494,4 +494,4 @@
         启用: true
         类型: 脚本
         内容: |-
-          import 'https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard/dist/花间游/脚本/变量结构/index.js';
+          import 'http://127.0.0.1:8000/SillyTavern-CharacterCard/dist/花间游/脚本/变量结构/index.js';
