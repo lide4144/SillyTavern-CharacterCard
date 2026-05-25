@@ -31,7 +31,7 @@
 <script setup lang="ts">
 import { useDataStore } from '../store';
 
-const data = useDataStore();
+const data = useDataStore().data;
 </script>
 
 <style lang="scss" scoped>

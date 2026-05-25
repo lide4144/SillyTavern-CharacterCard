@@ -76,7 +76,7 @@
 <script setup lang="ts">
 import { useDataStore } from '../store';
 
-const data = useDataStore();
+const data = useDataStore().data;
 
 function getBarColor(value: number) {
   if (value > 60) return '#228b22';

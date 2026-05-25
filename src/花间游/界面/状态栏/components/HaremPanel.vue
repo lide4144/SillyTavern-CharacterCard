@@ -41,14 +41,14 @@
 import { computed } from 'vue';
 import { useDataStore } from '../store';
 
-const data = useDataStore();
+const data = useDataStore().data;
 
 const conqueredCount = computed(() => {
-  return Object.values(data.必吃榜).filter(c => c.已攻略).length;
+  return Object.values(data.value.必吃榜).filter(c => c.已攻略).length;
 });
 
 const totalIntimacy = computed(() => {
-  return Object.values(data.必吃榜).reduce((sum, c) => sum + c.亲密值, 0);
+  return Object.values(data.value.必吃榜).reduce((sum, c) => sum + c.亲密值, 0);
 });
 
 function getPercent(value: number, min: number, max: number) {
