@@ -48,6 +48,34 @@
       />
     </div>
 
+    <div class="protagonist-panel">
+      <div class="protagonist-header">
+        <span class="protagonist-title">🎓 主角</span>
+        <span class="protagonist-meta">{{ data.主角.学业.专业 }} {{ data.主角.学业.年级 }}</span>
+        <span class="internship-badge" :style="{ background: internshipColor }">{{ data.主角.学业.实习状态 }}</span>
+      </div>
+      <div class="study-row">
+        <span class="row-label">期末</span>
+        <div class="mini-bar">
+          <div class="mini-fill" :style="{ width: Math.min(100, Math.max(0, data.主角.学业.期末进度)) + '%' }"></div>
+        </div>
+        <span class="row-value">{{ data.主角.学业.期末进度 }}%</span>
+      </div>
+      <div v-if="data.主角.日程.今日" class="schedule-row">
+        <span class="row-icon">📅</span>
+        <span class="schedule-text">{{ data.主角.日程.今日 }}</span>
+      </div>
+      <div class="protagonist-footer">
+        <div v-if="inventoryPreview.length > 0" class="inventory-preview">
+          <span class="row-icon">📦</span>
+          <span v-for="[name] in inventoryPreview" :key="name" class="inventory-chip">{{ name }}</span>
+        </div>
+        <div class="memories-badge" title="已解锁回忆">
+          🔓 {{ unlockedMemories }}/15
+        </div>
+      </div>
+    </div>
+
     <div class="relation-event">
       <span class="event-label">📌 当前事件</span>
       <span class="event-text">{{ data.母女关系.当前事件 }}</span>
@@ -75,6 +103,28 @@ const advantageText = computed(() => {
   if (adv === '婉清') return '🌹 婉清领先';
   if (adv === '僵持') return '⚡ 势均力敌';
   return '— 暂无';
+});
+
+const internshipColor = computed(() => {
+  const status = data.value.主角.学业.实习状态;
+  if (status === '已接受') return '#22c55e';
+  if (status === '已拒绝') return '#6b7280';
+  if (status === '收到offer') return '#f59e0b';
+  return '#3b82f6';
+});
+
+const inventoryPreview = computed(() => {
+  const items = data.value.主角.物品栏 || {};
+  return Object.entries(items).slice(0, 3);
+});
+
+const unlockedMemories = computed(() => {
+  const memories = data.value.回忆 || {};
+  let count = 0;
+  if (memories.诗雨) count += Object.values(memories.诗雨).filter(Boolean).length;
+  if (memories.婉清) count += Object.values(memories.婉清).filter(Boolean).length;
+  if (memories.主角) count += Object.values(memories.主角).filter(Boolean).length;
+  return count;
 });
 </script>
 
@@ -182,5 +232,123 @@ const advantageText = computed(() => {
   color: #ddd6fe;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.protagonist-panel {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.protagonist-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.protagonist-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #93c5fd;
+}
+
+.protagonist-meta {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.internship-badge {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 8px;
+  color: #fff;
+  margin-left: auto;
+}
+
+.study-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.row-label {
+  color: rgba(255, 255, 255, 0.4);
+  min-width: 28px;
+}
+
+.mini-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.mini-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #60a5fa, #3b82f6);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.row-value {
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 30px;
+  text-align: right;
+}
+
+.schedule-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.row-icon {
+  font-size: 11px;
+}
+
+.schedule-text {
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.protagonist-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.inventory-preview {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.inventory-chip {
+  font-size: 10px;
+  padding: 1px 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+.memories-badge {
+  font-size: 10px;
+  color: #fbbf24;
+  white-space: nowrap;
 }
 </style>

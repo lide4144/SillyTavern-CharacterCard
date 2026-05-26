@@ -174,9 +174,160 @@
         "当前事件"
       ]
     },
+    "回忆": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "诗雨": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "回忆名"
+          },
+          "additionalProperties": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "婉清": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "回忆名"
+          },
+          "additionalProperties": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "主角": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "回忆名"
+          },
+          "additionalProperties": {
+            "default": false,
+            "type": "boolean"
+          }
+        }
+      }
+    },
     "主角": {
       "type": "object",
       "properties": {
+        "学业": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "专业": {
+              "default": "工商管理",
+              "type": "string"
+            },
+            "年级": {
+              "default": "大二",
+              "type": "string"
+            },
+            "期末进度": {
+              "default": 45,
+              "type": "number"
+            },
+            "实习状态": {
+              "default": "收到offer",
+              "type": "string",
+              "enum": [
+                "未申请",
+                "已投递",
+                "面试中",
+                "收到offer",
+                "已接受",
+                "已拒绝"
+              ]
+            }
+          }
+        },
+        "社交": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "社团": {
+              "default": "摄影社",
+              "type": "string"
+            },
+            "暧昧对象": {
+              "default": "",
+              "type": "string"
+            }
+          }
+        },
+        "日程": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "今日": {
+              "default": "",
+              "type": "string"
+            },
+            "明日": {
+              "default": "",
+              "type": "string"
+            }
+          }
+        },
+        "主线任务": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "任务名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "类型": {
+                "type": "string",
+                "enum": [
+                  "主线",
+                  "支线",
+                  "日常",
+                  "临危受命"
+                ]
+              },
+              "状态": {
+                "type": "string",
+                "enum": [
+                  "未开始",
+                  "进行中",
+                  "已完成",
+                  "已失败"
+                ]
+              },
+              "说明": {
+                "type": "string"
+              },
+              "目标": {
+                "type": "string"
+              },
+              "奖励": {
+                "default": "",
+                "type": "string"
+              },
+              "惩罚": {
+                "default": "",
+                "type": "string"
+              }
+            },
+            "required": [
+              "类型",
+              "状态",
+              "说明",
+              "目标"
+            ]
+          }
+        },
         "物品栏": {
           "type": "object",
           "propertyNames": {

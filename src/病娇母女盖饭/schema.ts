@@ -18,11 +18,11 @@ export const Schema = z.object({
       const $病娇阶段 =
         data.病娇度 < 20
           ? '普通妹妹'
-          : data.病娇度 < 40
-            ? '暗中观察'
-            : data.病娇度 < 60
-              ? '开始行动'
-              : data.病娇度 < 80
+          : data.病娇度 < 35
+            ? '暗流涌动'
+            : data.病娇度 < 55
+              ? '公开竞争'
+              : data.病娇度 < 75
                 ? '危险信号'
                 : '完全病娇';
       return { ...data, $病娇阶段 };
@@ -41,11 +41,11 @@ export const Schema = z.object({
       const $病娇阶段 =
         data.病娇度 < 20
           ? '温柔母亲'
-          : data.病娇度 < 40
-            ? '微妙关注'
-            : data.病娇度 < 60
-              ? '积极进攻'
-              : data.病娇度 < 80
+          : data.病娇度 < 35
+            ? '暗流涌动'
+            : data.病娇度 < 55
+              ? '公开竞争'
+              : data.病娇度 < 75
                 ? '不择手段'
                 : '疯狂母性';
       return { ...data, $病娇阶段 };
@@ -57,7 +57,48 @@ export const Schema = z.object({
     当前事件: z.string(),
   }),
 
+  回忆: z
+    .object({
+      诗雨: z.record(z.string().describe('回忆名'), z.boolean().prefault(false)).prefault({}),
+      婉清: z.record(z.string().describe('回忆名'), z.boolean().prefault(false)).prefault({}),
+      主角: z.record(z.string().describe('回忆名'), z.boolean().prefault(false)).prefault({}),
+    })
+    .prefault({}),
+
   主角: z.object({
+    学业: z
+      .object({
+        专业: z.string().prefault('工商管理'),
+        年级: z.string().prefault('大二'),
+        期末进度: z.coerce.number().transform(v => _.clamp(v, 0, 100)).prefault(45),
+        实习状态: z.enum(['未申请', '已投递', '面试中', '收到offer', '已接受', '已拒绝']).prefault('收到offer'),
+      })
+      .prefault({}),
+    社交: z
+      .object({
+        社团: z.string().prefault('摄影社'),
+        暧昧对象: z.string().prefault(''),
+      })
+      .prefault({}),
+    日程: z
+      .object({
+        今日: z.string().prefault(''),
+        明日: z.string().prefault(''),
+      })
+      .prefault({}),
+    主线任务: z
+      .record(
+        z.string().describe('任务名'),
+        z.object({
+          类型: z.enum(['主线', '支线', '日常', '临危受命']),
+          状态: z.enum(['未开始', '进行中', '已完成', '已失败']),
+          说明: z.string(),
+          目标: z.string(),
+          奖励: z.string().prefault(''),
+          惩罚: z.string().prefault(''),
+        }),
+      )
+      .prefault({}),
     物品栏: z
       .record(
         z.string().describe('物品名'),
