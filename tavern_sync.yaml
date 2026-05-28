@@ -1,11 +1,16 @@
 # yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/settings.zh.json
 
 # 在此填入 user 名称, 提示词中如果有这个名字则会被替换成 <user> 宏
+<<<<<<< HEAD
 user名称: 李德
+=======
+user名称: 青空黎
+>>>>>>> 6dc4e35995d4d180a1cd4ff223ac9d21f083e2f5
 
 # 在此填入新的"角色卡"、"世界书"或"预设"配置
 配置:
   # 配置名称, 可以和酒馆中的不同. 你使用脚本时需要填写配置名称来指出用哪个配置, 因此尽量配置名称尽量简单点方便填写
+<<<<<<< HEAD
   yandere_isekai:
     类型: 角色卡
     酒馆中的名称: 血衣罗刹的江湖
@@ -36,6 +41,8 @@ user名称: 李德
     本地文件路径: src/残响之海/index
     导出文件路径: src/残响之海/残响之海
 
+=======
+>>>>>>> 6dc4e35995d4d180a1cd4ff223ac9d21f083e2f5
   角色卡示例:
     # 类型可以是"角色卡"、"世界书"或"预设"
     类型: 角色卡
