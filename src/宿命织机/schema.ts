@@ -35,7 +35,7 @@ export const Schema = z.object({
       李烈: z.string().prefault('陌生的追杀者，称呼这具身体为「弟弟」和「失败品」'),
       李钰: z.string().prefault('尚未谋面。从这具身体的原主人记忆碎片中隐约感到的名字'),
     }).prefault({}),
-    自我认知: z.string().prefault('地球少年李德，占据了陌生的身体。对身份感到迷茫但懒得深究'),
+    自我认知: z.string().prefault('地球少年李德，占据了一具陌生的身体。每次照镜子都会愣一下，然后就懒得想了'),
     已揭示真相: z.record(z.string().describe('真相名'), z.boolean()).prefault({}),
   }).prefault({}),
 
