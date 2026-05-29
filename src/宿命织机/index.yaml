@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/character.zh.json
-头像: null
+头像: 头像
 版本: 1.0.0
 作者: AI Assistant
 备注: 宿命织机——以剧情交互为核心的异世界角色卡
