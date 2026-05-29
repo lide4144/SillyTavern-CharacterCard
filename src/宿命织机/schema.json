@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "default": "帝国历1145年-春",
+          "type": "string"
+        },
+        "当前地点": {
+          "default": "哨石镇·冒险者公会附近",
+          "type": "string"
+        },
+        "当前阶段": {
+          "default": "边境冒险者",
+          "type": "string"
+        },
+        "氛围": {
+          "default": "边境小镇特有的混杂着马粪、烤肉与铁锈味的慵懒气息",
+          "type": "string"
+        },
+        "近期事务": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        }
+      }
+    },
+    "李德": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "生命力": {
+          "default": 85,
+          "type": "number"
+        },
+        "体力": {
+          "default": 70,
+          "type": "number"
+        },
+        "精神稳定度": {
+          "default": 60,
+          "type": "number"
+        },
+        "噬生之铠": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "状态": {
+              "default": "收束",
+              "type": "string",
+              "enum": [
+                "收束",
+                "半展",
+                "全开"
+              ]
+            },
+            "侵蚀度": {
+              "default": 5,
+              "type": "number"
+            }
+          }
+        },
+        "能力": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "剑术": {
+              "default": 45,
+              "type": "number"
+            },
+            "魔力感知": {
+              "default": 30,
+              "type": "number"
+            },
+            "生存能力": {
+              "default": 55,
+              "type": "number"
+            },
+            "社交技巧": {
+              "default": 25,
+              "type": "number"
+            },
+            "领导力": {
+              "default": 20,
+              "type": "number"
+            }
+          }
+        },
+        "物品栏": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        },
+        "关系认知": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "瑟希莉娅": {
+              "default": "温柔的导师，天魔王代理人。一年后消失，不知去向",
+              "type": "string"
+            },
+            "艾莉丝": {
+              "default": "从奴隶市场救出的妖精，自称「伴侣」。粘人，但大概只是感激或创伤反应",
+              "type": "string"
+            },
+            "李烈": {
+              "default": "陌生的追杀者，称呼这具身体为「弟弟」和「失败品」",
+              "type": "string"
+            },
+            "李钰": {
+              "default": "尚未谋面。从这具身体的原主人记忆碎片中隐约感到的名字",
+              "type": "string"
+            }
+          }
+        },
+        "自我认知": {
+          "default": "地球少年李德，占据了陌生的身体。对身份感到迷茫但懒得深究",
+          "type": "string"
+        },
+        "已揭示真相": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "真相名"
+          },
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "艾莉丝": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "依恋度": {
+          "default": 65,
+          "type": "number"
+        },
+        "独占欲": {
+          "default": 50,
+          "type": "number"
+        },
+        "形态": {
+          "default": "少女",
+          "type": "string",
+          "enum": [
+            "少年",
+            "少女"
+          ]
+        },
+        "状态": {
+          "default": "紧随李德左右，距离不超过三米",
+          "type": "string"
+        }
+      }
+    },
+    "瑟希莉娅": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "距离感": {
+          "default": 80,
+          "type": "number"
+        },
+        "情感压抑": {
+          "default": 70,
+          "type": "number"
+        },
+        "混沌侵蚀": {
+          "default": 40,
+          "type": "number"
+        },
+        "状态": {
+          "default": "消失中。森林一别后不知所踪",
+          "type": "string"
+        }
+      }
+    },
+    "外部威胁": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "李烈追击": {
+          "default": 30,
+          "type": "number"
+        },
+        "帝国关注": {
+          "default": 15,
+          "type": "number"
+        },
+        "李钰调查": {
+          "default": 5,
+          "type": "number"
+        }
+      }
+    },
+    "剧情": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前幕": {
+          "default": "第四幕：奴隶市场的火焰",
+          "type": "string"
+        },
+        "已发生事件": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事件名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事件简述"
+          }
+        },
+        "关键抉择": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "抉择名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "抉择结果"
+          }
+        }
+      }
+    }
+  }
+}
