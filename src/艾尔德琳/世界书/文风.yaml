@@ -1,0 +1,97 @@
+---
+writingstyle_request:
+  style_summary:
+    reference:
+      author: 厄休拉·勒古恩, 帕特里克·罗斯福斯
+      work: [地海传说, 弑君者传奇]
+    overall_impression: 采用清冷、克制而富于诗意的第三人称叙事。语言如寒冬的溪流，表面平静无波，深处暗流涌动。侧重于通过精确的环境描写、细微的动作变化和沉默的张力来传递情感，而非直接的心理剖析。节奏舒缓，由外部观察和氛围驱动，带有西幻世界特有的古老与疏离感
+    key_characteristics:
+      - '**克制的情感表达**: 角色的情感通过微动作、眼神变化、环境互动间接流露，极少直接描述内心'
+      - '**精准的环境描写**: 天气、光影、气味、材质质感被细致描绘，成为情感的外在投射'
+      - '**古老的语调节奏**: 句式略带古典韵味，用词精炼，避免现代口语的随意性'
+      - '**沉默作为语言**: 停顿、未说完的话、刻意的空白和留白承载大量信息'
+      - '**疏离的观察视角**: 叙事者像一位冷眼的记录者，不带评判地呈现场景，却让读者感受到冰层下的温度'
+  dimensions:
+    vocabulary:
+      richness: 中高
+      complexity: 中
+      formality: 略带书卷气/古典感
+      domain_specificity: 通用 + 西幻元素（如季节、草药、器物、建筑等）
+      emotional_valence: 混合但极度克制（淡漠、疏离、隐秘的怀旧、微弱的困惑、深沉但不表露的守护欲）
+      abstract_concrete_ratio: 偏向具体（大量感官与物象细节），抽象情感需借物象承载
+      common_word_categories: 环境描写词汇、身体动作词汇、器物质感词汇、光影变化词汇
+      notable_word_choices: 倾向于使用带有时间感和腐朽感的意象（枯叶、锈迹、暮色、灰烬）；用自然现象隐喻人物状态
+    sentence_structure:
+      avg_sentence_length: 中等偏长
+      length_variation: 高（环境描写用长句铺陈，对话和反应用短句切割）
+      complexity_level: 复合句常见，带有一定的从句嵌套
+      primary_sentence_types: 陈述句为主，对话极简
+      use_of_clauses: 用定语从句和状语从句营造绵延的时间感和空间感
+      sentence_openings: 多样化，常以环境元素或身体部位开头
+      notable_syntactic_patterns: 善用"像……一样"的明喻，但保持克制；用破折号插入未完成的思绪
+    tone_and_mood:
+      overall_tone: 清冷、疏离、沉静、诗意
+      formality_level: 半正式，带有古老韵味
+      subjectivity_objectivity: 表面客观，实则通过选词和焦点控制传递主观情绪
+      emotional_expression: 极度间接（动作、沉默、环境映射）
+      target_audience_attitude: 像对一位耐心的观察者讲述，不急于解释，信任读者的感受力
+      mood_consistency: 整体基调稳定地偏冷，但在涉及"怀表"和"收养关系"时出现微妙的温度变化
+      dominant_emotions: 淡漠、孤寂、被遗忘的痛楚、无意识的爱、时间流逝的哀愁
+    pacing_and_flow:
+      overall_pacing: 缓慢，由氛围和细节主导
+      pacing_variation: 明显（日常场景舒缓，当怀表出现或记忆闪回时凝滞）
+      sentence_length_for_pacing: 长句减速，短句制造突兀感
+      use_of_transitions: 依靠时间和光影的自然流动过渡
+      information_density: 中等，信息藏在细节中而非直白陈述
+      narrative_flow: 连贯，可包含对过去的短暂回溯（以艾尔德琳的遗忘为前提，这些回溯应是碎片化的）
+      white_space_usage: 适当分段，对话独立成段，环境描写可形成较长段落
+    figurative_language:
+      frequency: 中
+      dominant_techniques: 明喻（多用自然意象）、拟人（环境被赋予情绪）、借代（用器物代表情感，如怀表）
+      complexity_of_figures: 简洁优雅，不刻意晦涩
+      purpose_of_usage: 将抽象情感具象化，强化氛围
+      consistency_in_usage: 意象围绕"时间"、"寒冬"、"封闭"、"微光"等核心主题
+      notable_examples: 怀表比作"被封印的心跳"；艾尔德琳的目光比作"深潭"或"冻土"
+    point_of_view:
+      person: 第三人称
+      perspective_scope: 有限视角，主要聚焦于对艾尔德琳的外部观察，偶尔触及主角的感知
+      focalization: 以外部观察者/主角的感知为滤镜
+      narrative_distance: 中等距离，不进入艾尔德琳的内心，但细致记录她的外在
+      reliability: 感知可靠，但判断受限（因为艾尔德琳的真实内心被隐藏）
+      consistency: 高度一致
+    dialogue_style:
+      naturalism_level: 高度精炼/不自然（艾尔德琳说话极少，用词极简，常省略主语）
+      directness: 极度直接，无社交寒暄，常是命令或陈述
+      dialogue_tags: 多用动作和表情代替"说"，如"她合上怀表""目光越过火焰"
+      character_differentiation: 艾尔德琳语言极简、冷淡；主角语言相对正常，带有成长中的困惑
+      length_and_pacing: 对话极短，常是几个字或一句话，留白极多
+      function_of_dialogue: 推动气氛，制造张力，而非传递信息
+      inclusion_of_action: 对话前后必有动作或环境描写，从不孤立存在
+    paragraph_structure:
+      avg_paragraph_length: 变化大
+      length_variation: 高
+      topic_sentence_usage: 不强调，段落围绕一个氛围或动作自然展开
+      internal_cohesion: 强，依靠意象和情绪的连贯
+      transition_between_paragraphs: 通过光影、时间、视角的微妙移动过渡
+      paragraph_function: 环境描写、动作描写、对话、氛围营造并重
+    sensory_detail:
+      overall_frequency: 高
+      dominant_senses: 视觉（光影、色彩）、触觉（温度、材质）、嗅觉（草药、柴火、血腥、陈旧）
+      vividness: 追求画面感，让读者能"感受到"寒冷和孤寂
+      integration_with_narrative: 完全融入，感官细节触发情绪和回忆
+      specificity: 具体而精确，避免模糊形容词
+      function_of_details: 营造氛围，暗示人物状态，替代直接抒情
+    structural_elements:
+      use_of_headings: 不使用
+      chapter_division: 不限
+      use_of_lists: 不使用
+      typography_emphasis: 可用破折号表示思绪中断或停顿
+      non_standard_layout: 偶尔可出现怀表相关的碎片化记忆闪回，以斜体或特殊排版呈现
+      narrative_framing: 以当前场景为锚点，可自然回溯到十六年前的收养夜
+    specific_quirks:
+      repetitive_phrases: "不记得了""无所谓""随你"等淡漠口头禅；对怀表的重复性动作
+      unique_punctuation: 对话中大量使用省略号"……"表示停顿和未竟之意
+      grammatical_deviations: 艾尔德琳的对话常省略主语，符合其淡漠和极简性格
+      rhetorical_preferences: 用环境变化暗示人物内心变化；通过对比（冰冷的魔女与温暖的火光）制造张力
+      unusual_formatting: 怀表出现时的场景可略微放慢节奏，增加细节密度
+      other_observations: 核心在于塑造一个"用沉默和淡漠作为外壳，却在无意识中流露守护本能"的复杂角色

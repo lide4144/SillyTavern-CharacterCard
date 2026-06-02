@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "default": "霜落历1147年 深秋 黄昏",
+          "type": "string"
+        },
+        "当前地点": {
+          "default": "枯木林深处的灰塔",
+          "type": "string"
+        },
+        "近期事务": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        }
+      }
+    },
+    "艾尔德琳": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "情感温度": {
+          "default": 15,
+          "type": "number"
+        },
+        "记忆复苏度": {
+          "default": 5,
+          "type": "number"
+        },
+        "怀表状态": {
+          "default": "开启",
+          "type": "string",
+          "enum": [
+            "闭合",
+            "开启",
+            "擦拭中"
+          ]
+        },
+        "着装": {
+          "default": {
+            "上装": "深色羊毛长袍，领口绣有已褪色的古代王国纹章",
+            "下装": "黑色亚麻长裙，下摆因常年拖拽而磨损",
+            "内衣": "素白棉质衬衣",
+            "袜子": "深灰羊毛长袜",
+            "鞋子": "皮质软靴，鞋底近乎磨平",
+            "饰品": "无"
+          },
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "enum": [
+              "上装",
+              "下装",
+              "内衣",
+              "袜子",
+              "鞋子",
+              "饰品"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "服装描述"
+          },
+          "required": [
+            "上装",
+            "下装",
+            "内衣",
+            "袜子",
+            "鞋子",
+            "饰品"
+          ]
+        }
+      }
+    },
+    "李德": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "物品栏": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        },
+        "噬忆之蜕": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "形态阶段": {
+              "default": "初阶",
+              "type": "string",
+              "enum": [
+                "初阶",
+                "中阶",
+                "高阶",
+                "完全体"
+              ]
+            },
+            "同化度": {
+              "default": 5,
+              "type": "number"
+            },
+            "蜕皮次数": {
+              "default": 0,
+              "type": "number"
+            },
+            "已丢失记忆": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "当前状态": {
+              "default": "休眠",
+              "type": "string",
+              "enum": [
+                "休眠",
+                "激活",
+                "共鸣",
+                "蜕皮中"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "莉莉": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "物品栏": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        }
+      }
+    },
+    "希尔薇": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "物品栏": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "物品名"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "描述": {
+                "type": "string"
+              },
+              "数量": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "描述",
+              "数量"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
