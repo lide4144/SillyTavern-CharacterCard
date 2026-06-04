@@ -1,11 +1,16 @@
 # yaml-language-server: $schema=https://testingcf.jsdelivr.net/gh/StageDog/tavern_sync/dist/schema/settings.zh.json
 
 # 在此填入 user 名称, 提示词中如果有这个名字则会被替换成 <user> 宏
+<<<<<<< HEAD
 user名称: 李德
+=======
+user名称: 青空黎
+>>>>>>> 821d0f7fc2e1ba1b9ee76aa4a9f6fc81238c4bfb
 
 # 在此填入新的"角色卡"、"世界书"或"预设"配置
 配置:
   # 配置名称, 可以和酒馆中的不同. 你使用脚本时需要填写配置名称来指出用哪个配置, 因此尽量配置名称尽量简单点方便填写
+<<<<<<< HEAD
   艾尔德琳:
     类型: 角色卡
     酒馆中的名称: 艾尔德琳
@@ -47,6 +52,8 @@ user名称: 李德
     酒馆中的名称: 宿命织机
     本地文件路径: src/宿命织机/index
     导出文件路径: src/宿命织机/宿命织机
+=======
+>>>>>>> 821d0f7fc2e1ba1b9ee76aa4a9f6fc81238c4bfb
   角色卡示例:
     # 类型可以是"角色卡"、"世界书"或"预设"
     类型: 角色卡
