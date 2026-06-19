@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "default": "2024-04-08 08:30",
+          "type": "string"
+        },
+        "当前地点": {
+          "default": "主楼走廊",
+          "type": "string"
+        },
+        "当前活动": {
+          "default": "自由活动",
+          "type": "string"
+        },
+        "近期事务": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "事务名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "事务描述"
+          }
+        }
+      },
+      "required": [
+        "近期事务"
+      ]
+    },
+    "主角": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "体力": {
+          "default": 100,
+          "type": "number"
+        },
+        "学业": {
+          "default": 70,
+          "type": "number"
+        },
+        "社交评价": {
+          "default": 50,
+          "type": "number"
+        },
+        "所属社团": {
+          "default": "无",
+          "type": "string"
+        }
+      }
+    },
+    "不知火舞": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "麻宫雅典娜": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "坂崎由莉": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "King": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "布鲁玛丽": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "神乐千鹤": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "莉安娜": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "薇丝": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "麦卓": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "夏尔米": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "库拉": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "安琪儿": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "温妮莎": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "伊丽莎白": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "桃子": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "四条雏子": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "福克茜": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "李香绯": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "藤堂香澄": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "春丽": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "嘉米": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "樱": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "朱莉": {
+      "$ref": "#/$defs/__schema0"
+    }
+  },
+  "$defs": {
+    "__schema0": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 50,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "陌生人",
+          "type": "string"
+        },
+        "印象": {
+          "default": "新来的转学生",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
