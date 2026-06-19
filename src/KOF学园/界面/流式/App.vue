@@ -1,6 +1,8 @@
 <template>
   <div class="galgame-root">
-    <!-- Latest message: full galgame UI -->
+    <div style="color:#0f0;font-size:11px;border:1px solid #0f0;padding:2px 6px;margin-bottom:4px;">
+      msg#{{ context.message_id }} | lastID={{ lastMsgId }} | latest={{ isLatest }} | textLen={{ context.message?.length || 0 }}
+    </div>
     <template v-if="isLatest">
       <!-- Time/Location -->
       <div v-if="parsed.time" class="galgame-time">{{ parsed.time }}</div>
@@ -57,6 +59,7 @@ import { CHARACTERS } from '../同层/characters';
 const context = injectStreamingMessageContext();
 const dataStore = useDataStore();
 
+const lastMsgId = computed(() => getLastMessageId());
 const isLatest = computed(() => context.message_id === getLastMessageId());
 
 function extractTag(tag: string, text: string): string {
