@@ -29,7 +29,7 @@
       </div>
 
       <!-- Status bar -->
-      <div v-if="dataStore.data.value.世界" class="galgame-status">
+      <div v-if="dataStore.data?.value?.世界" class="galgame-status">
         <span class="galgame-stat">⚡ {{ playerEnergy }}</span>
         <span class="galgame-stat">📚 {{ playerAcademics }}</span>
         <span class="galgame-stat">💬 {{ playerSocial }}</span>
@@ -112,13 +112,14 @@ const summary = computed(() => {
   return text.length > 200 ? text.substring(0, 200) + '…' : text;
 });
 
-const playerEnergy = computed(() => dataStore.data.value?.主角?.体力 ?? '--');
-const playerAcademics = computed(() => dataStore.data.value?.主角?.学业 ?? '--');
-const playerSocial = computed(() => dataStore.data.value?.主角?.社交评价 ?? '--');
-const playerClub = computed(() => dataStore.data.value?.主角?.所属社团 ?? '--');
+const playerEnergy = computed(() => dataStore.data?.value?.主角?.体力 ?? '--');
+const playerAcademics = computed(() => dataStore.data?.value?.主角?.学业 ?? '--');
+const playerSocial = computed(() => dataStore.data?.value?.主角?.社交评价 ?? '--');
+const playerClub = computed(() => dataStore.data?.value?.主角?.所属社团 ?? '--');
 
 const topAffections = computed(() => {
-  const data = dataStore.data.value;
+  const data = dataStore.data?.value;
+  if (!data) return [];
   return CHARACTERS
     .map(c => {
       const charData = _.get(data, c.id, { 好感度: 0 });
