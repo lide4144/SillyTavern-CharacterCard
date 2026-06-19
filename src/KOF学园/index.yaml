@@ -1084,7 +1084,7 @@
          启用: true
          类型: 脚本
          内容: |-
-           import 'https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard/dist/KOF学园/界面/流式/index.js';
+           import 'https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard@main/dist/KOF学园/界面/流式/index.js';
 
      变量: {}
 
