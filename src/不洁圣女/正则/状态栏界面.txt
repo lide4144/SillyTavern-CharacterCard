@@ -1,7 +1,7 @@
 ```
 <body>
 <script>
-$('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard/dist/不洁圣女/界面/状态栏/index.html')
+$('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard@TheNewAndOriginal/dist/不洁圣女/界面/状态栏/index.html')
 </script>
 </body>
 ```
