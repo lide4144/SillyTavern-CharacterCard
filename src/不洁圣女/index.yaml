@@ -532,8 +532,15 @@
     - 正则名称: 状态栏界面
       id: ce6da13c-4e35-4057-8964-3192b7903acc
       启用: true
-      查找表达式: <StatusPlaceHolderImpl\/>
-      文件: 正则/状态栏界面
+      查找表达式: <StatusPlaceHolderImpl/>
+      内容: |-
+        ```
+        <body>
+        <script>
+        $('body').load('https://testingcf.jsdelivr.net/gh/lide4144/SillyTavern-CharacterCard@TheNewAndOriginal/dist/不洁圣女/界面/状态栏/index.html')
+        </script>
+        </body>
+        ```
       来源:
         用户输入: false
         AI输出: true
