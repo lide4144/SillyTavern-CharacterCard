@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* 黑暗圣堂配色 */
+  --c-abyss: #1a0a2e;
+  --c-obsidian: #2d1b4e;
+  --c-amethyst: #7b2d8e;
+  --c-crimson: #8b1a1a;
+  --c-gold: #b8860b;
+  --c-parchment: #f5f0e8;
+  --c-ash: #8a7b8c;
+  --c-celadon: #a2e3c4;
+  --c-rose: #d4a0a0;
+  --c-silver: #c0b8c8;
+
+  /* 进度条渐变色 */
+  --bar-pure: #7b8cb0;
+  --bar-curious: #a08bc0;
+  --bar-waver: #c080a0;
+  --bar-fallen: #c05060;
+  --bar-sunk: #8b1a1a;
+
+  /* 字体 */
+  --font-display: 'Georgia', 'Noto Serif SC', 'SimSun', serif;
+  --font-body: 'Palatino Linotype', 'Noto Serif SC', 'Book Antiqua', serif;
+  --font-mono: 'Courier New', 'Microsoft YaHei', monospace;
+}

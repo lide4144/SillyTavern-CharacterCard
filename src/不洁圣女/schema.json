@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "修女": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "堕落": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "身体堕落度": {
+              "default": 0,
+              "type": "number"
+            },
+            "精神堕落度": {
+              "default": 0,
+              "type": "number"
+            },
+            "信仰堕落度": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "身体": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "处女状态": {
+              "default": "处女",
+              "type": "string",
+              "enum": [
+                "处女",
+                "非处女",
+                "被改造"
+              ]
+            },
+            "肉体改造等级": {
+              "default": 0,
+              "type": "number"
+            },
+            "后颈敏感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "耳垂敏感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "大腿内侧敏感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "乳首敏感度": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "性经验": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "初吻": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次触碰": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次插入": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次高潮": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次触手": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次群交": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次精神操控": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次露出": {
+              "default": 0,
+              "type": "number"
+            },
+            "累计高潮次数": {
+              "default": 0,
+              "type": "number"
+            },
+            "累计性交对象数": {
+              "default": 0,
+              "type": "number"
+            },
+            "初次受孕": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "关系": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "雷恩好感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "洛克好感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "马库斯好感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "莉莉丝好感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "格雷因好感度": {
+              "default": 0,
+              "type": "number"
+            },
+            "洛伦佐信任": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "状态": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "昼夜": {
+              "default": "day",
+              "type": "string",
+              "enum": [
+                "day",
+                "night"
+              ]
+            },
+            "身份暴露": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "CG": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "cg_初次忏悔情欲": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次夜间战败": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次触手": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次雷恩目睹": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次催眠": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次群交": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次肉体改造": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_初次露出": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_贵族调教": {
+              "default": 0,
+              "type": "number"
+            },
+            "cg_身份暴露": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<%_
+define('身体堕落度', getvar('stat_data.修女.堕落.身体堕落度', { defaults: 0 }));
+define('精神堕落度', getvar('stat_data.修女.堕落.精神堕落度', { defaults: 0 }));
+define('信仰堕落度', getvar('stat_data.修女.堕落.信仰堕落度', { defaults: 0 }));
+define('昼夜', getvar('stat_data.修女.状态.昼夜', { defaults: 'day' }));
+define('身份暴露', getvar('stat_data.修女.状态.身份暴露', { defaults: 0 }));
+define('处女状态', getvar('stat_data.修女.身体.处女状态', { defaults: '处女' }));
+define('肉体改造等级', getvar('stat_data.修女.身体.肉体改造等级', { defaults: 0 }));
+define('后颈敏感度', getvar('stat_data.修女.身体.后颈敏感度', { defaults: 0 }));
+define('耳垂敏感度', getvar('stat_data.修女.身体.耳垂敏感度', { defaults: 0 }));
+define('大腿内侧敏感度', getvar('stat_data.修女.身体.大腿内侧敏感度', { defaults: 0 }));
+define('乳首敏感度', getvar('stat_data.修女.身体.乳首敏感度', { defaults: 0 }));
+define('初吻', getvar('stat_data.修女.性经验.初吻', { defaults: 0 }));
+define('初次触碰', getvar('stat_data.修女.性经验.初次触碰', { defaults: 0 }));
+define('初次插入', getvar('stat_data.修女.性经验.初次插入', { defaults: 0 }));
+define('初次高潮', getvar('stat_data.修女.性经验.初次高潮', { defaults: 0 }));
+define('初次触手', getvar('stat_data.修女.性经验.初次触手', { defaults: 0 }));
+define('初次群交', getvar('stat_data.修女.性经验.初次群交', { defaults: 0 }));
+define('初次精神操控', getvar('stat_data.修女.性经验.初次精神操控', { defaults: 0 }));
+define('初次露出', getvar('stat_data.修女.性经验.初次露出', { defaults: 0 }));
+define('累计高潮次数', getvar('stat_data.修女.性经验.累计高潮次数', { defaults: 0 }));
+define('累计性交对象数', getvar('stat_data.修女.性经验.累计性交对象数', { defaults: 0 }));
+define('初次受孕', getvar('stat_data.修女.性经验.初次受孕', { defaults: 0 }));
+define('雷恩好感度', getvar('stat_data.修女.关系.雷恩好感度', { defaults: 0 }));
+define('洛克好感度', getvar('stat_data.修女.关系.洛克好感度', { defaults: 0 }));
+define('马库斯好感度', getvar('stat_data.修女.关系.马库斯好感度', { defaults: 0 }));
+define('莉莉丝好感度', getvar('stat_data.修女.关系.莉莉丝好感度', { defaults: 0 }));
+define('格雷因好感度', getvar('stat_data.修女.关系.格雷因好感度', { defaults: 0 }));
+define('洛伦佐信任', getvar('stat_data.修女.关系.洛伦佐信任', { defaults: 0 }));
+define('cg_初次忏悔情欲', getvar('stat_data.修女.CG.cg_初次忏悔情欲', { defaults: 0 }));
+define('cg_初次夜间战败', getvar('stat_data.修女.CG.cg_初次夜间战败', { defaults: 0 }));
+define('cg_初次触手', getvar('stat_data.修女.CG.cg_初次触手', { defaults: 0 }));
+define('cg_初次雷恩目睹', getvar('stat_data.修女.CG.cg_初次雷恩目睹', { defaults: 0 }));
+define('cg_初次催眠', getvar('stat_data.修女.CG.cg_初次催眠', { defaults: 0 }));
+define('cg_初次群交', getvar('stat_data.修女.CG.cg_初次群交', { defaults: 0 }));
+define('cg_初次肉体改造', getvar('stat_data.修女.CG.cg_初次肉体改造', { defaults: 0 }));
+define('cg_初次露出', getvar('stat_data.修女.CG.cg_初次露出', { defaults: 0 }));
+define('cg_贵族调教', getvar('stat_data.修女.CG.cg_贵族调教', { defaults: 0 }));
+define('cg_身份暴露', getvar('stat_data.修女.CG.cg_身份暴露', { defaults: 0 }));
+_%>
+-
