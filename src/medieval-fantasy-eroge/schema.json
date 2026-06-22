@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "艾丽西亚": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "level": {
+          "default": 1,
+          "type": "number"
+        },
+        "exp": {
+          "default": 0,
+          "type": "number"
+        },
+        "hp": {
+          "default": 100,
+          "type": "number"
+        },
+        "maxHp": {
+          "default": 100,
+          "type": "number"
+        },
+        "mp": {
+          "default": 50,
+          "type": "number"
+        },
+        "maxMp": {
+          "default": 50,
+          "type": "number"
+        },
+        "corruption": {
+          "default": 0,
+          "type": "number"
+        },
+        "arousal": {
+          "default": 0,
+          "type": "number"
+        },
+        "status": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "poison",
+              "paralysis",
+              "aphrodisiac",
+              "tentacle_parasite",
+              "curse",
+              "charm"
+            ]
+          }
+        },
+        "defeatCount": {
+          "default": 0,
+          "type": "number"
+        },
+        "gold": {
+          "default": 500,
+          "type": "number"
+        },
+        "element": {
+          "default": "fire",
+          "type": "string",
+          "enum": [
+            "fire",
+            "water",
+            "wind",
+            "earth",
+            "light",
+            "dark"
+          ]
+        },
+        "virginity": {
+          "default": "intact",
+          "type": "string",
+          "enum": [
+            "intact",
+            "broken",
+            "experienced"
+          ]
+        }
+      }
+    }
+  }
+}
