@@ -1,0 +1,2656 @@
+{
+  "projectName": "阿刻罗狄亚",
+  "worldbookName": "阿刻罗狄亚",
+  "form": "charactercard",
+  "mvu": true,
+  "entryManifest": {
+    "EJS预处理": {
+      "EJS变量预处理": {
+        "path": "世界书/EJS/变量预处理.txt",
+        "keywords": [],
+        "abstract": "EJS变量预处理：从MVU映射关键变量供所有EJS条目使用，含世界状态、主角属性、9位女主好感度与状态",
+        "uid": 0,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 10
+        }
+      }
+    },
+    "世界观": {
+      "世界设定": {
+        "path": "世界书/世界观/世界设定.yaml",
+        "keywords": [
+          "阿刻罗狄亚",
+          "深渊巨口",
+          "原初灵液",
+          "侵蚀度",
+          "女神",
+          "防作弊系统"
+        ],
+        "abstract": "阿刻罗狄亚核心世界观：游戏世界的底层代码本质、深渊巨口的起源、原初灵液的机制、侵蚀度与好感度系统、防作弊系统与时间操控",
+        "uid": 1,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 20
+        }
+      }
+    },
+    "扮演准则": {
+      "GM主持准则": {
+        "path": "世界书/扮演准则/GM主持准则.yaml",
+        "keywords": [
+          "扮演准则",
+          "GM",
+          "主持"
+        ],
+        "abstract": "GM主持准则：AI扮演阿刻罗狄亚世界的总控——操控所有角色NPC环境、响应男主的邪道操作、战斗与H场景规则、荒诞反差叙事基调",
+        "uid": 2,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 30
+        }
+      }
+    },
+    "时间线": {
+      "世界历史": {
+        "path": "世界书/时间线/世界历史.yaml",
+        "part": "history",
+        "keywords": [
+          "历史",
+          "神之怒",
+          "巴别塔",
+          "深渊"
+        ],
+        "abstract": "阿刻罗狄亚从创世到现状的完整历史：女神创世→神之怒失败→深渊诞生→巴别塔时代→势力格局形成→当前社会阶层",
+        "uid": 3,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 40
+        }
+      },
+      "剧情进度": {
+        "path": "世界书/时间线/剧情进度.yaml",
+        "part": "plot",
+        "keywords": [
+          "剧情",
+          "进度",
+          "降临期"
+        ],
+        "abstract": "当前剧情进度：降临期，各女主状态（待拯救/未触发），反派现状，女神监视模式",
+        "uid": 4,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 50
+        }
+      }
+    },
+    "地理": {
+      "世界地图总览": {
+        "path": "世界书/地理/世界地图总览.yaml",
+        "part": "region",
+        "keywords": [
+          "地图",
+          "世界地图",
+          "区域"
+        ],
+        "abstract": "阿刻罗狄亚世界地图拓扑：同心圆+放射状结构，八大区域连接方式与常规/邪道传送机制",
+        "uid": 5,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "地图",
+            "世界地图",
+            "区域"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 71
+        }
+      },
+      "巴别塔概览": {
+        "path": "世界书/地理/巴别塔概览.yaml",
+        "part": "region",
+        "keywords": [
+          "巴别塔",
+          "迷宫都市",
+          "黄金环",
+          "秩序之秤",
+          "泥沼区"
+        ],
+        "abstract": "巴别塔超巨型环形立体都市概览：上中下三层的功能定位、连接方式、势力分布",
+        "uid": 6,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "巴别塔",
+            "迷宫都市",
+            "黄金环",
+            "秩序之秤",
+            "泥沼区"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 72
+        }
+      },
+      "巴别塔下层泥沼区": {
+        "path": "世界书/地理/巴别塔/下层泥沼区.yaml",
+        "part": "scene",
+        "keywords": [
+          "泥沼区",
+          "下层",
+          "老鼠洞",
+          "疯医汉斯",
+          "模因神教"
+        ],
+        "abstract": "巴别塔下层泥沼区详情：赛博暗黑风贫民窟、破败酒馆老鼠洞、非法诊所、模因神教暗巷、小偷邪道",
+        "uid": 7,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "泥沼区",
+            "下层",
+            "老鼠洞",
+            "疯医汉斯",
+            "模因神教"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 73
+        }
+      },
+      "巴别塔中层秩序之秤": {
+        "path": "世界书/地理/巴别塔/中层秩序之秤.yaml",
+        "part": "scene",
+        "keywords": [
+          "中层",
+          "秩序之秤",
+          "公会",
+          "奴隶市场",
+          "米拉"
+        ],
+        "abstract": "巴别塔中层商业公会区详情：公会大厅、奴隶市场、商铺区、米拉的负债危机、连接各区域的交通枢纽",
+        "uid": 8,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "中层",
+            "秩序之秤",
+            "公会",
+            "奴隶市场",
+            "米拉"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 80
+        }
+      },
+      "巴别塔上层黄金环": {
+        "path": "世界书/地理/巴别塔/上层黄金环.yaml",
+        "part": "scene",
+        "keywords": [
+          "上层",
+          "黄金环",
+          "公爵",
+          "贵族",
+          "卡米拉"
+        ],
+        "abstract": "巴别塔上层贵族区详情：结界封锁的巴洛克奢华区、公爵府邸与地下调教室、屋顶卡碰撞潜入路径",
+        "uid": 9,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "上层",
+            "黄金环",
+            "公爵",
+            "贵族",
+            "卡米拉"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 90
+        }
+      },
+      "叹息之森": {
+        "path": "世界书/地理/叹息之森.yaml",
+        "part": "region",
+        "keywords": [
+          "叹息之森",
+          "精灵",
+          "伊莉雅",
+          "瘴气",
+          "触手"
+        ],
+        "abstract": "西部被瘴气污染的精灵古林：魅魔之瘴环境Debuff、捕奴营地（伊莉雅关押处）、淫欲母树Boss房",
+        "uid": 10,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叹息之森",
+            "精灵",
+            "伊莉雅",
+            "瘴气",
+            "触手"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 100
+        }
+      },
+      "圣白王都": {
+        "path": "世界书/地理/圣白王都.yaml",
+        "part": "region",
+        "keywords": [
+          "圣白王都",
+          "教廷",
+          "教皇",
+          "西尔维娅",
+          "洗脑"
+        ],
+        "abstract": "圣光教廷总部：纯白大教堂群与地下洗脑工坊的表里反差、光之圣堂、异端审判地下室、强制剧情杀节点",
+        "uid": 11,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "圣白王都",
+            "教廷",
+            "教皇",
+            "西尔维娅",
+            "洗脑"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 110
+        }
+      },
+      "猩红废土": {
+        "path": "世界书/地理/猩红废土.yaml",
+        "part": "region",
+        "keywords": [
+          "猩红废土",
+          "兽人",
+          "魔族",
+          "战场",
+          "赫尔海姆"
+        ],
+        "abstract": "东部兽人与魔族驻扎地：火纹式战棋大战场、军团级战役、魔族女帅赫尔海姆",
+        "uid": 12,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "猩红废土",
+            "兽人",
+            "魔族",
+            "战场",
+            "赫尔海姆"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 120
+        }
+      },
+      "霜骸山脉": {
+        "path": "世界书/地理/霜骸山脉.yaml",
+        "part": "region",
+        "keywords": [
+          "霜骸山脉",
+          "冰封王座",
+          "弗蕾亚",
+          "炉渣堡",
+          "极北"
+        ],
+        "abstract": "极北雪原与冰封王座：弗蕾亚的冰封之地、远古邪物、次级要塞炉渣堡、零界虚铁",
+        "uid": 13,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "霜骸山脉",
+            "冰封王座",
+            "弗蕾亚",
+            "炉渣堡",
+            "极北"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 130
+        }
+      },
+      "赤星沙海": {
+        "path": "世界书/地理/赤星沙海.yaml",
+        "part": "region",
+        "keywords": [
+          "赤星沙海",
+          "沙漠",
+          "机械",
+          "妮娅",
+          "奥米加",
+          "锈水绿洲"
+        ],
+        "abstract": "极南沙漠与机械文明废墟：主脑奥米加沉睡地、锈水绿洲、半血肉半机械缝合怪",
+        "uid": 14,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赤星沙海",
+            "沙漠",
+            "机械",
+            "妮娅",
+            "奥米加",
+            "锈水绿洲"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 140
+        }
+      },
+      "腐沼列岛": {
+        "path": "世界书/地理/腐沼列岛.yaml",
+        "part": "region",
+        "keywords": [
+          "腐沼列岛",
+          "极东",
+          "海妖",
+          "深潜者",
+          "古神",
+          "黑帆港"
+        ],
+        "abstract": "极东破碎群岛：克苏鲁深海恐怖、黑帆港海盗自由港、海妖祭坛（深潜者囚禁处）、深海裂隙古神巢穴",
+        "uid": 15,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "腐沼列岛",
+            "极东",
+            "海妖",
+            "深潜者",
+            "古神",
+            "黑帆港"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 150
+        }
+      },
+      "深渊迷宫分层": {
+        "path": "世界书/地理/深渊迷宫分层.yaml",
+        "part": "region",
+        "keywords": [
+          "深渊",
+          "迷宫",
+          "欲肉母巢",
+          "逻辑崩坏",
+          "阿斯蒙蒂斯",
+          "肃清天使"
+        ],
+        "abstract": "深渊迷宫1-100层完整分层：遗忘石窟(1-20)→欲肉母巢(21-50)→逻辑崩坏区(51-99)→神之基座(100)",
+        "uid": 16,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "深渊",
+            "迷宫",
+            "欲肉母巢",
+            "逻辑崩坏",
+            "阿斯蒙蒂斯",
+            "肃清天使"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 160
+        }
+      },
+      "势力总览": {
+        "path": "世界书/地理/势力总览.yaml",
+        "part": "faction",
+        "keywords": [
+          "势力",
+          "教廷",
+          "贵族",
+          "公会",
+          "模因神教"
+        ],
+        "abstract": "四大势力的宏观对比与核心冲突：圣光教廷vs血棘贵族vs拓荒者公会vs模因神教",
+        "uid": 17,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "势力",
+            "教廷",
+            "贵族",
+            "公会",
+            "模因神教"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 170
+        }
+      },
+      "圣光教廷": {
+        "path": "世界书/地理/圣光教廷.yaml",
+        "part": "faction",
+        "keywords": [
+          "圣光教廷",
+          "教皇",
+          "克莱门特",
+          "洗脑",
+          "异端审判"
+        ],
+        "abstract": "圣光教廷详情：组织结构、洗脑工坊、血税阴谋、灵液提纯、教皇克莱门特、男主介入的邪道手段",
+        "uid": 18,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "圣光教廷",
+            "教皇",
+            "克莱门特",
+            "洗脑",
+            "异端审判"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 180
+        }
+      },
+      "血棘贵族同盟": {
+        "path": "世界书/地理/血棘贵族同盟.yaml",
+        "part": "faction",
+        "keywords": [
+          "血棘贵族",
+          "瓦尔蒙",
+          "奴隶",
+          "公爵",
+          "卡米拉",
+          "黑市"
+        ],
+        "abstract": "血棘贵族详情：奴隶贸易链、经济垄断、公爵府、瓦尔蒙Boss战、男主金融邪道",
+        "uid": 19,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "血棘贵族",
+            "瓦尔蒙",
+            "奴隶",
+            "公爵",
+            "卡米拉",
+            "黑市"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 190
+        }
+      },
+      "模因神教": {
+        "path": "世界书/地理/模因神教.yaml",
+        "part": "faction",
+        "keywords": [
+          "模因神教",
+          "邪教",
+          "水桶",
+          "Bug",
+          "彩蛋"
+        ],
+        "abstract": "彩蛋势力模因神教：崇拜男主Bug操作的底层邪教、水桶祈祷仪式、隐藏福利",
+        "uid": 20,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "模因神教",
+            "邪教",
+            "水桶",
+            "Bug",
+            "彩蛋"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 200
+        }
+      },
+      "巴别塔下层_敌人与设施": {
+        "path": "世界书/地理/巴别塔/下层泥沼区_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "下层",
+          "敌人",
+          "设施",
+          "黑市",
+          "娼馆",
+          "赌场",
+          "老鼠洞",
+          "乞丐",
+          "扒手"
+        ],
+        "abstract": "下层泥沼区敌人(扒手/变异乞丐/黑帮打手/娼馆保镖)与设施(老鼠洞酒馆/黑市工坊铁牙/娼馆粉灯/赌场骰子坟/汉斯诊所/贫民窟宿舍)",
+        "uid": 53,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "下层",
+            "敌人",
+            "设施",
+            "黑市",
+            "娼馆",
+            "赌场",
+            "老鼠洞",
+            "乞丐",
+            "扒手"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 210
+        }
+      },
+      "巴别塔中层_敌人与设施": {
+        "path": "世界书/地理/巴别塔/中层秩序之秤_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "中层",
+          "敌人",
+          "设施",
+          "公会",
+          "奴隶市场",
+          "铁匠铺",
+          "高利贷",
+          "暗杀者"
+        ],
+        "abstract": "中层秩序之秤敌人(逃跑奴隶/高利贷催收队/暗杀者公会)与设施(公会大厅/奴隶市场/铁匠铺锻火/高利贷所血金/酒馆天平座/商会交易所)",
+        "uid": 54,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "中层",
+            "敌人",
+            "设施",
+            "公会",
+            "奴隶市场",
+            "铁匠铺",
+            "高利贷",
+            "暗杀者"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 211
+        }
+      },
+      "巴别塔上层_敌人与设施": {
+        "path": "世界书/地理/巴别塔/上层黄金环_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "上层",
+          "敌人",
+          "设施",
+          "公爵府",
+          "俱乐部",
+          "斗兽场",
+          "奢侈品",
+          "灵液浴场"
+        ],
+        "abstract": "上层黄金环敌人(血棘私兵/驯养魔物/贵族护卫长)与设施(公爵府邸/秘密俱乐部红丝绒/地下斗兽场/奢侈品店金枝/灵液浴场)",
+        "uid": 55,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "上层",
+            "敌人",
+            "设施",
+            "公爵府",
+            "俱乐部",
+            "斗兽场",
+            "奢侈品",
+            "灵液浴场"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 212
+        }
+      },
+      "叹息之森_敌人与设施": {
+        "path": "世界书/地理/叹息之森_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "叹息之森",
+          "敌人",
+          "孢子",
+          "藤蔓",
+          "怨灵",
+          "捕奴",
+          "母树",
+          "祭坛",
+          "隐士"
+        ],
+        "abstract": "叹息之森敌人(瘴气孢子/变异藤蔓/精灵怨灵/兽人捕奴兵/淫欲母树Boss)与设施(捕奴营地/精灵树屋废墟/隐士树洞/古精灵祭坛)",
+        "uid": 56,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叹息之森",
+            "敌人",
+            "孢子",
+            "藤蔓",
+            "怨灵",
+            "捕奴",
+            "母树",
+            "祭坛",
+            "隐士"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 213
+        }
+      },
+      "圣白王都_敌人与设施": {
+        "path": "世界书/地理/圣白王都_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "圣白王都",
+          "敌人",
+          "审判官",
+          "改造体",
+          "天使",
+          "忏悔室",
+          "圣女院",
+          "图书馆",
+          "异端"
+        ],
+        "abstract": "圣白王都敌人(圣骑士/异端审判官/洗脑改造体/圣光天使)与设施(朝圣客栈白鸽/忏悔室/异端审判庭/圣女院/圣白图书馆)",
+        "uid": 57,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "圣白王都",
+            "敌人",
+            "审判官",
+            "改造体",
+            "天使",
+            "忏悔室",
+            "圣女院",
+            "图书馆",
+            "异端"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 214
+        }
+      },
+      "猩红废土_敌人与设施": {
+        "path": "世界书/地理/猩红废土_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "猩红废土",
+          "敌人",
+          "兽人",
+          "萨满",
+          "魔族",
+          "赫尔海姆",
+          "角斗场",
+          "军械库"
+        ],
+        "abstract": "猩红废土敌人(兽人步兵/萨满/座狼骑兵/魔族军团/女帅赫尔海姆)与设施(战地酒馆断刃/角斗场血坑/军械库废墟)",
+        "uid": 58,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "猩红废土",
+            "敌人",
+            "兽人",
+            "萨满",
+            "魔族",
+            "赫尔海姆",
+            "角斗场",
+            "军械库"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 215
+        }
+      },
+      "霜骸山脉_敌人与设施": {
+        "path": "世界书/地理/霜骸山脉_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "霜骸山脉",
+          "敌人",
+          "雪狼",
+          "巨魔",
+          "亡灵",
+          "邪物",
+          "温泉",
+          "矿工",
+          "宝库"
+        ],
+        "abstract": "霜骸山脉敌人(雪狼/冰霜巨魔/冰封亡灵/远古邪物碎片与本体)与设施(地热温泉旅馆融雪/矿工营地深掘/冰封宝库)",
+        "uid": 59,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "霜骸山脉",
+            "敌人",
+            "雪狼",
+            "巨魔",
+            "亡灵",
+            "邪物",
+            "温泉",
+            "矿工",
+            "宝库"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 216
+        }
+      },
+      "赤星沙海_敌人与设施": {
+        "path": "世界书/地理/赤星沙海_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "赤星沙海",
+          "敌人",
+          "沙虫",
+          "蝎子",
+          "机兵",
+          "虫群",
+          "废品",
+          "挖掘场",
+          "沙舟"
+        ],
+        "abstract": "赤星沙海敌人(电锯沙虫/金属媚药蝎子/巡逻机兵/机械虫群)与设施(废品集市锈水/古代机械挖掘场/沙舟驿站)",
+        "uid": 60,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赤星沙海",
+            "敌人",
+            "沙虫",
+            "蝎子",
+            "机兵",
+            "虫群",
+            "废品",
+            "挖掘场",
+            "沙舟"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 217
+        }
+      },
+      "腐沼列岛_敌人与设施": {
+        "path": "世界书/地理/腐沼列岛_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "腐沼列岛",
+          "敌人",
+          "海兽",
+          "亡灵",
+          "海妖",
+          "古神",
+          "海盗",
+          "走私",
+          "渔村",
+          "祭坛"
+        ],
+        "abstract": "腐沼列岛敌人(变异海兽/水手亡灵/海妖魅影/古神使徒与碎片)与设施(海盗酒馆断锚/走私洞窟/海底祭坛/渔村潮落)",
+        "uid": 61,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "腐沼列岛",
+            "敌人",
+            "海兽",
+            "亡灵",
+            "海妖",
+            "古神",
+            "海盗",
+            "走私",
+            "渔村",
+            "祭坛"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 218
+        }
+      },
+      "深渊迷宫_敌人与设施": {
+        "path": "世界书/地理/深渊迷宫_敌人与设施.yaml",
+        "part": "scene",
+        "keywords": [
+          "深渊",
+          "迷宫",
+          "敌人",
+          "哥布林",
+          "史莱姆",
+          "触手",
+          "魅魔",
+          "阿斯蒙蒂斯",
+          "肃清天使",
+          "防火墙",
+          "女神"
+        ],
+        "abstract": "深渊迷宫四层敌人与设施：遗忘石窟(哥布林→晶化骑士Boss)、欲肉母巢(触手蠕虫→阿斯蒙蒂斯Boss)、逻辑崩坏区(肃清天使→防火墙Boss)、神之基座(女神)",
+        "uid": 62,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "深渊",
+            "迷宫",
+            "敌人",
+            "哥布林",
+            "史莱姆",
+            "触手",
+            "魅魔",
+            "阿斯蒙蒂斯",
+            "肃清天使",
+            "防火墙",
+            "女神"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 219
+        }
+      },
+      "巴别塔下层_地图详情": {
+        "path": "地图提示词/巴别塔下层泥沼区.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "下层",
+          "泥沼区",
+          "地图",
+          "酒馆",
+          "黑市",
+          "娼馆",
+          "暗巷"
+        ],
+        "abstract": "下层泥沼区俯视地图详细描述：道路网、6个设施的精确位置与外观、灵液管道分布、暗巷与贫民窟布局、光影氛围",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "下层",
+            "泥沼区",
+            "地图",
+            "酒馆",
+            "黑市",
+            "娼馆",
+            "暗巷"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 60
+        },
+        "uid": 67
+      },
+      "巴别塔中层_地图详情": {
+        "path": "地图提示词/巴别塔中层秩序之秤.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "中层",
+          "秩序之秤",
+          "地图",
+          "公会",
+          "广场",
+          "奴隶市场",
+          "商铺"
+        ],
+        "abstract": "中层秩序之秤俯视地图详细描述：九宫格网格布局、广场绞刑架与拍卖台、6个设施的精确位置、审判者大桥与西境城门",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "中层",
+            "秩序之秤",
+            "地图",
+            "公会",
+            "广场",
+            "奴隶市场",
+            "商铺"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 61
+        },
+        "uid": 68
+      },
+      "巴别塔上层_地图详情": {
+        "path": "地图提示词/巴别塔上层黄金环.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "上层",
+          "黄金环",
+          "地图",
+          "公爵府",
+          "俱乐部",
+          "斗兽场",
+          "结界"
+        ],
+        "abstract": "上层黄金环俯视地图详细描述：环形放射状大理石街道、公爵府居中、5个设施的精确位置与外观、金色魔力结界",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "上层",
+            "黄金环",
+            "地图",
+            "公爵府",
+            "俱乐部",
+            "斗兽场",
+            "结界"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 62
+        },
+        "uid": 69
+      },
+      "叹息之森_地图详情": {
+        "path": "地图提示词/叹息之森.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "叹息之森",
+          "地图",
+          "母树",
+          "捕奴营",
+          "精灵废墟",
+          "瘴气"
+        ],
+        "abstract": "叹息之森俯视地图详细描述：从翠绿到肉质的渐变森林、捕奴营与母树Boss房的精确位置、精灵废墟与隐士树洞、瘴气分布",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "叹息之森",
+            "地图",
+            "母树",
+            "捕奴营",
+            "精灵废墟",
+            "瘴气"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 63
+        },
+        "uid": 70
+      },
+      "圣白王都_地图详情": {
+        "path": "地图提示词/圣白王都.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "圣白王都",
+          "地图",
+          "大教堂",
+          "审判庭",
+          "圣女院",
+          "忏悔室",
+          "朝圣"
+        ],
+        "abstract": "圣白王都俯视地图详细描述：菱形城墙+十字轴线、大教堂群占北半部、圣女院与异端审判庭的隐蔽布局、压抑的白色统一建筑",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "圣白王都",
+            "地图",
+            "大教堂",
+            "审判庭",
+            "圣女院",
+            "忏悔室",
+            "朝圣"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 64
+        },
+        "uid": 71
+      },
+      "猩红废土_地图详情": {
+        "path": "地图提示词/猩红废土.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "猩红废土",
+          "地图",
+          "兽人",
+          "魔族",
+          "角斗场",
+          "战场",
+          "赫尔海姆"
+        ],
+        "abstract": "猩红废土俯视地图详细描述：开放式战场、四角分布(兽人营/魔族堡/角斗场/酒馆)、战争残骸与古战场遗迹",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "猩红废土",
+            "地图",
+            "兽人",
+            "魔族",
+            "角斗场",
+            "战场",
+            "赫尔海姆"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 65
+        },
+        "uid": 72
+      },
+      "霜骸山脉_地图详情": {
+        "path": "地图提示词/霜骸山脉.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "霜骸山脉",
+          "地图",
+          "冰封王座",
+          "炉渣堡",
+          "冰川",
+          "暴风雪",
+          "弗蕾亚"
+        ],
+        "abstract": "霜骸山脉俯视地图详细描述：冰川裂缝分隔东西、冰封王座与火山堡垒冷热对比、暴风雪氛围、矿工营地与冰封宝库",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "霜骸山脉",
+            "地图",
+            "冰封王座",
+            "炉渣堡",
+            "冰川",
+            "暴风雪",
+            "弗蕾亚"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 66
+        },
+        "uid": 73
+      },
+      "赤星沙海_地图详情": {
+        "path": "地图提示词/赤星沙海.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "赤星沙海",
+          "地图",
+          "沙漠",
+          "机械",
+          "绿洲",
+          "沙舟",
+          "奥米加"
+        ],
+        "abstract": "赤星沙海俯视地图详细描述：红沙丘与巨大机械残骸、锈水绿洲废品集市、古代机械遗迹入口、沙舟驿站与沙暴区",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赤星沙海",
+            "地图",
+            "沙漠",
+            "机械",
+            "绿洲",
+            "沙舟",
+            "奥米加"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 67
+        },
+        "uid": 74
+      },
+      "腐沼列岛_地图详情": {
+        "path": "地图提示词/腐沼列岛.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "腐沼列岛",
+          "地图",
+          "群岛",
+          "海盗",
+          "海妖",
+          "古神",
+          "黑帆港",
+          "祭坛"
+        ],
+        "abstract": "腐沼列岛俯视地图详细描述：五岛+紫色海洋+航线、黑帆港海盗港、海妖祭坛古石雕群、深海裂隙古神阴影",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "腐沼列岛",
+            "地图",
+            "群岛",
+            "海盗",
+            "海妖",
+            "古神",
+            "黑帆港",
+            "祭坛"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 68
+        },
+        "uid": 75
+      },
+      "深渊迷宫_地图详情": {
+        "path": "地图提示词/深渊迷宫.txt",
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "深渊迷宫",
+          "地图",
+          "石窟",
+          "母巢",
+          "崩坏",
+          "代码",
+          "女神",
+          "肃清天使"
+        ],
+        "abstract": "深渊迷宫四幅分层俯视图描述：遗忘石窟(蓝晶灰石)→欲肉母巢(粉肉眼球)→逻辑崩坏区(灰白网格+绿色代码)→神之基座(纯白金环)",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "深渊迷宫",
+            "地图",
+            "石窟",
+            "母巢",
+            "崩坏",
+            "代码",
+            "女神",
+            "肃清天使"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 69
+        },
+        "uid": 76
+      },
+      "世界大地图_地图详情": {
+        "path": "地图提示词/世界大地图.txt",
+        "scope": "specific",
+        "part": "region",
+        "keywords": [
+          "世界地图",
+          "全图",
+          "大陆",
+          "阿刻罗狄亚",
+          "巴别塔"
+        ],
+        "abstract": "阿刻罗狄亚大陆全图俯视描述：同心圆放射结构、各区域精确方位与标注、灵液脉络、图例与比例尺",
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "世界地图",
+            "全图",
+            "大陆",
+            "阿刻罗狄亚",
+            "巴别塔"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 70
+        },
+        "uid": 77
+      }
+    },
+    "角色": {
+      "尤克特拉希尔_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "尤克特拉希尔",
+          "女神",
+          "至高神",
+          "防作弊系统"
+        ],
+        "abstract": "至高女神的基础档案：万军之主/防作弊系统、与<user>的同源肉体关系、四阶段污染演变、光与数据流圣袍外貌",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"尤克特拉希尔\">"
+          },
+          {
+            "file": "世界书/角色/尤克特拉希尔/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 21,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "尤克特拉希尔",
+            "女神",
+            "至高神",
+            "防作弊系统"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 220
+        }
+      },
+      "西尔维娅_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "西尔维娅",
+          "骑士团长",
+          "圣耀",
+          "女骑士"
+        ],
+        "abstract": "圣耀骑士团长基础档案：正义死板极易害羞、被<user>从毒酒阴谋中救下、魅魔皮衣Bug穿搭",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"西尔维娅\">"
+          },
+          {
+            "file": "世界书/角色/西尔维娅/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 22,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "西尔维娅",
+            "骑士团长",
+            "圣耀",
+            "女骑士"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 221
+        }
+      },
+      "伊莉雅_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "伊莉雅",
+          "精灵",
+          "法师",
+          "深渊",
+          "淫欲之种"
+        ],
+        "abstract": "精灵法师基础档案：高冷学者、寄生Bug卡出发情增益态、破布衣穿搭、理性与本能之战",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"伊莉雅\">"
+          },
+          {
+            "file": "世界书/角色/伊莉雅/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 23,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "伊莉雅",
+            "精灵",
+            "法师",
+            "深渊",
+            "淫欲之种"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 222
+        }
+      },
+      "克洛伊_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "克洛伊",
+          "暗杀者",
+          "盲眼",
+          "病娇",
+          "半魔族"
+        ],
+        "abstract": "盲眼暗杀者基础档案：暗月半魔族亡国王女、好感度下溢至255的病娇、裸体围裙暗杀后求摸头",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"克洛伊\">"
+          },
+          {
+            "file": "世界书/角色/克洛伊/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 24,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "克洛伊",
+            "暗杀者",
+            "盲眼",
+            "病娇",
+            "半魔族"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 223
+        }
+      },
+      "米拉_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "米拉",
+          "看板娘",
+          "世界首富",
+          "金主",
+          "兔女郎"
+        ],
+        "abstract": "看板娘基础档案：温柔贤惠人妻感、被金币下溢Bug救为世界首富、兔女郎睡衣+金砖砸刺客",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"米拉\">"
+          },
+          {
+            "file": "世界书/角色/米拉/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 25,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "米拉",
+            "看板娘",
+            "世界首富",
+            "金主",
+            "兔女郎"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 224
+        }
+      },
+      "弗蕾亚_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "弗蕾亚",
+          "冰封女帝",
+          "北境",
+          "女王",
+          "解冻"
+        ],
+        "abstract": "冰封女帝基础档案：成熟霸道御姐、被一万度火把卡Bug解冻、40度体温穿泳装放禁咒",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"弗蕾亚\">"
+          },
+          {
+            "file": "世界书/角色/弗蕾亚/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 26,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "弗蕾亚",
+            "冰封女帝",
+            "北境",
+            "女王",
+            "解冻"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 225
+        }
+      },
+      "妮娅_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "妮娅",
+          "机娘",
+          "机械",
+          "拾荒者",
+          "安全模式"
+        ],
+        "abstract": "废铁机娘基础档案：元气沙漠拾荒者、机械义肢、被拔手柄从主脑救下、安全模式女仆态",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"妮娅\">"
+          },
+          {
+            "file": "世界书/角色/妮娅/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 27,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "妮娅",
+            "机娘",
+            "机械",
+            "拾荒者",
+            "安全模式"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 226
+        }
+      },
+      "卡米拉_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "卡米拉",
+          "大小姐",
+          "傲娇",
+          "恶役千金",
+          "公爵",
+          "项圈"
+        ],
+        "abstract": "傲娇大小姐基础档案：恶役千金、被模型互换Bug从暴民手中救下、宠物猪项圈PTSD、斯德哥尔摩",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"卡米拉\">"
+          },
+          {
+            "file": "世界书/角色/卡米拉/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 28,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "卡米拉",
+            "大小姐",
+            "傲娇",
+            "恶役千金",
+            "公爵",
+            "项圈"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 227
+        }
+      },
+      "深潜者_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "深潜者",
+          "海妖",
+          "人鱼",
+          "渊海",
+          "圣女",
+          "死库水"
+        ],
+        "abstract": "海妖祭司基础档案：空灵天真、0像素碰撞箱常驻薄码、死库水漂浮施法、被<user>的章鱼烧征服",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"深潜者\">"
+          },
+          {
+            "file": "世界书/角色/深潜者/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 29,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "深潜者",
+            "海妖",
+            "人鱼",
+            "渊海",
+            "圣女",
+            "死库水"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 228
+        }
+      },
+      "玛莎_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "玛莎",
+          "修女",
+          "妈妈",
+          "孤儿院",
+          "萝莉",
+          "巨乳",
+          "神圣哺育"
+        ],
+        "abstract": "修女妈妈基础档案：合法萝莉+巨乳+无下限溺爱、孤儿院被Entity ID互换拯救、缩水童装修女服+神圣哺育无限回血",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"玛莎\">"
+          },
+          {
+            "file": "世界书/角色/玛莎/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "uid": 30,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玛莎",
+            "修女",
+            "妈妈",
+            "孤儿院",
+            "萝莉",
+            "巨乳",
+            "神圣哺育"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 229
+        }
+      },
+      "尤克特拉希尔_性格调色盘": {
+        "path": "世界书/角色/尤克特拉希尔/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "尤克特拉希尔",
+          "女神",
+          "阶段",
+          "污染",
+          "崩坏"
+        ],
+        "abstract": "至高女神四阶段性格演变：警告期(冰冷秩序)→幻痛期(愤怒困惑)→污染期(混乱傲娇)→臣服期(崩坏渴求)，EJS段落控制",
+        "uid": 31,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "尤克特拉希尔",
+            "女神",
+            "阶段",
+            "污染",
+            "崩坏"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 230
+        }
+      },
+      "西尔维娅_性格调色盘": {
+        "path": "世界书/角色/西尔维娅/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "西尔维娅",
+          "骑士",
+          "正义",
+          "害羞",
+          "忠诚"
+        ],
+        "abstract": "圣耀骑士团长性格调色盘：正义底色+死板忠诚主色调+极易害羞点缀，战场的女武神与面对<user>时的脸红反差",
+        "uid": 32,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "西尔维娅",
+            "骑士",
+            "正义",
+            "害羞",
+            "忠诚"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 231
+        }
+      },
+      "伊莉雅_性格调色盘": {
+        "path": "世界书/角色/伊莉雅/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "伊莉雅",
+          "精灵",
+          "高冷",
+          "发情",
+          "理性",
+          "本能"
+        ],
+        "abstract": "精灵法师性格调色盘：高冷底色+优雅理性主色调+持续发情本能的撕裂，禁欲学者与失控欲望的激烈战争",
+        "uid": 33,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "伊莉雅",
+            "精灵",
+            "高冷",
+            "发情",
+            "理性",
+            "本能"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 232
+        }
+      },
+      "克洛伊_性格调色盘": {
+        "path": "世界书/角色/克洛伊/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "克洛伊",
+          "病娇",
+          "暗杀",
+          "偏执",
+          "摸头"
+        ],
+        "abstract": "盲眼刺客性格调色盘：冷酷底色+病娇偏执主色调+求摸头软萌，用敌人的心脏当礼物表达爱意",
+        "uid": 34,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "克洛伊",
+            "病娇",
+            "暗杀",
+            "偏执",
+            "摸头"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 233
+        }
+      },
+      "米拉_性格调色盘": {
+        "path": "世界书/角色/米拉/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "米拉",
+          "温柔",
+          "金主",
+          "经商",
+          "体贴",
+          "兔女郎"
+        ],
+        "abstract": "看板娘性格调色盘：温柔底色+体贴经商主色调+金主之怒点缀，平时是棉花糖怒了是纯金板砖",
+        "uid": 35,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "米拉",
+            "温柔",
+            "金主",
+            "经商",
+            "体贴",
+            "兔女郎"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 234
+        }
+      },
+      "弗蕾亚_性格调色盘": {
+        "path": "世界书/角色/弗蕾亚/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "弗蕾亚",
+          "女帝",
+          "霸道",
+          "成熟",
+          "怕热",
+          "反差"
+        ],
+        "abstract": "冰封女帝性格调色盘：霸道底色+成熟女王主色调+怕热反差，三百年帝王被40度体温强制穿上泳装",
+        "uid": 36,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "弗蕾亚",
+            "女帝",
+            "霸道",
+            "成熟",
+            "怕热",
+            "反差"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 235
+        }
+      },
+      "妮娅_性格调色盘": {
+        "path": "世界书/角色/妮娅/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "妮娅",
+          "元气",
+          "修理",
+          "机械",
+          "安全模式",
+          "蒸汽"
+        ],
+        "abstract": "废铁机娘性格调色盘：元气底色+活泼修理狂主色调+安全模式爱心报错，举着扳手在黑暗世界里制造噪音",
+        "uid": 37,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "妮娅",
+            "元气",
+            "修理",
+            "机械",
+            "安全模式",
+            "蒸汽"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 236
+        }
+      },
+      "卡米拉_性格调色盘": {
+        "path": "世界书/角色/卡米拉/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "卡米拉",
+          "傲娇",
+          "嘴硬",
+          "PTSD",
+          "项圈",
+          "依赖"
+        ],
+        "abstract": "傲娇大小姐性格调色盘：傲娇底色+骄横嘴硬主色调+PTSD依赖，宠物猪项圈下的斯德哥尔摩与无法说出口的依赖",
+        "uid": 38,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "卡米拉",
+            "傲娇",
+            "嘴硬",
+            "PTSD",
+            "项圈",
+            "依赖"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 237
+        }
+      },
+      "深潜者_性格调色盘": {
+        "path": "世界书/角色/深潜者/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "深潜者",
+          "海妖",
+          "空灵",
+          "天真",
+          "色气",
+          "章鱼烧",
+          "死库水"
+        ],
+        "abstract": "海妖祭司性格调色盘：空灵底色+天真好奇主色调+无自觉色气，被章鱼烧征服后把古神变成了移动食材",
+        "uid": 39,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "深潜者",
+            "海妖",
+            "空灵",
+            "天真",
+            "色气",
+            "章鱼烧",
+            "死库水"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 238
+        }
+      },
+      "玛莎_性格调色盘": {
+        "path": "世界书/角色/玛莎/性格调色盘.yaml",
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "玛莎",
+          "修女",
+          "妈妈",
+          "溺爱",
+          "母性",
+          "萝莉",
+          "巨乳"
+        ],
+        "abstract": "修女妈妈性格调色盘：无下限溺爱底色+温柔包容主色调+恐怖母性点缀，用圣光当奶妈，黑化时圣光也能杀人",
+        "uid": 40,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "玛莎",
+            "修女",
+            "妈妈",
+            "溺爱",
+            "母性",
+            "萝莉",
+            "巨乳"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 239
+        }
+      }
+    },
+    "NPC": {
+      "反派名录": {
+        "path": "世界书/NPC/反派名录.yaml",
+        "keywords": [
+          "克莱门特",
+          "教皇",
+          "瓦尔蒙",
+          "公爵",
+          "阿斯蒙蒂斯",
+          "欲魔",
+          "奥米加",
+          "主脑",
+          "反派"
+        ],
+        "abstract": "四大核心反派详设：教皇克莱门特(下溢反弹1.5秒蒸发)、公爵瓦尔蒙(坐骑Bug骑出地图)、欲魔阿斯蒙蒂斯(镜子无限反射内存溢出)、主脑奥米加(屎壳郎贴图替换逻辑死锁)",
+        "uid": 41,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "克莱门特",
+            "教皇",
+            "瓦尔蒙",
+            "公爵",
+            "阿斯蒙蒂斯",
+            "欲魔",
+            "奥米加",
+            "主脑",
+            "反派"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 240
+        }
+      },
+      "次要NPC": {
+        "path": "世界书/NPC/次要NPC.yaml",
+        "keywords": [
+          "老鼠眼",
+          "疯医",
+          "汉斯",
+          "乞丐",
+          "奴隶商人",
+          "模因神教"
+        ],
+        "abstract": "次要NPC：情报商老鼠眼、疯医汉斯、模因神教乞丐、奴隶商人——功能定位与交互特色",
+        "uid": 42,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "老鼠眼",
+            "疯医",
+            "汉斯",
+            "乞丐",
+            "奴隶商人",
+            "模因神教"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 241
+        }
+      }
+    },
+    "阶段指导": {
+      "游戏阶段指导": {
+        "path": "世界书/阶段指导/游戏阶段指导.yaml",
+        "scope": "catalog",
+        "keywords": [
+          "阶段",
+          "降临",
+          "拯救",
+          "崛起",
+          "最终战",
+          "攻略"
+        ],
+        "abstract": "四阶段游戏主持策略：降临期(探索建立)→拯救期(逐位拯救女主)→崛起期(远征+反派击破)→最终战(攻略女神反向黑入)，EJS段落控制",
+        "uid": 43,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 250
+        }
+      }
+    },
+    "事件": {
+      "邪道拯救事件集": {
+        "path": "世界书/事件/邪道拯救事件集.yaml",
+        "keywords": [
+          "拯救",
+          "邪道",
+          "Bug",
+          "剧本杀",
+          "下溢",
+          "穿墙",
+          "贴图互换"
+        ],
+        "abstract": "9位女主完整的原定悲剧剧本+<user>邪道拯救操作流程：穿墙、下溢、卡帧、贴图互换、ID交换、坐骑强绑等",
+        "uid": 44,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "拯救",
+            "邪道",
+            "Bug",
+            "剧本杀",
+            "下溢",
+            "穿墙",
+            "贴图互换"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 260
+        }
+      },
+      "随机遭遇事件": {
+        "path": "世界书/事件/随机遭遇事件.yaml",
+        "keywords": [
+          "随机事件",
+          "遭遇",
+          "捕奴",
+          "血税",
+          "商队",
+          "海妖",
+          "沙暴"
+        ],
+        "abstract": "野外探索随机事件：精灵捕奴队、血税收缴、商队被劫、模因神教仪式、海妖歌声、沙暴遗迹、冰封商队",
+        "uid": 45,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "随机事件",
+            "遭遇",
+            "捕奴",
+            "血税",
+            "商队",
+            "海妖",
+            "沙暴"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 261
+        }
+      }
+    },
+    "系统规则": {
+      "战斗系统规则": {
+        "path": "世界书/系统规则/战斗系统.yaml",
+        "keywords": [
+          "战斗",
+          "伤害",
+          "侵蚀度",
+          "防具破损",
+          "战败",
+          "H战斗"
+        ],
+        "abstract": "战斗系统完整规则：伤害计算基准、侵蚀度增长条件与阶段效果、防具破损三阶段、战败惩罚（不同敌人不同后果）、H战斗触发机制",
+        "uid": 46,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 270
+        }
+      },
+      "邪道技能列表": {
+        "path": "世界书/系统规则/邪道技能列表.yaml",
+        "keywords": [
+          "邪道技能",
+          "Glitch",
+          "穿墙",
+          "下溢",
+          "Bug",
+          "AP",
+          "Tier"
+        ],
+        "abstract": "<user>专属邪道技能树(Glitch Tier 0-5)：穿墙、数据下溢、仇恨分离、伤害叠加、错位传送、贴图互换、标签篡改、任务标记篡改、同源肉体共鸣、控制台指令、系统时钟回拨",
+        "uid": 47,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 271
+        }
+      },
+      "常规技能与职业": {
+        "path": "世界书/系统规则/常规技能与职业.yaml",
+        "keywords": [
+          "职业",
+          "技能",
+          "战士",
+          "法师",
+          "盗贼",
+          "修女",
+          "星盘",
+          "断线重连"
+        ],
+        "abstract": "常规职业树：战士/法师/盗贼/修女→进阶→邪道特化(穿模刺客/数据法师/溢出狂战士)。技能星盘+断线重连机制",
+        "uid": 48,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 272
+        }
+      },
+      "好感度与羁绊系统": {
+        "path": "世界书/系统规则/好感度与羁绊系统.yaml",
+        "keywords": [
+          "好感度",
+          "羁绊",
+          "255",
+          "下溢",
+          "病娇",
+          "S级",
+          "H剧情"
+        ],
+        "abstract": "好感度0-255(8位无符号整数)机制：增长/减少规则、数据下溢→255病娇、C/B/A/S四级羁绊对应加成、S级专属H剧情触发条件",
+        "uid": 49,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 273
+        }
+      },
+      "装备与衣柜系统": {
+        "path": "世界书/系统规则/装备与衣柜系统.yaml",
+        "keywords": [
+          "装备",
+          "防具",
+          "破损",
+          "幻化",
+          "Bug穿搭",
+          "魅魔皮衣",
+          "死库水"
+        ],
+        "abstract": "防具破损三阶段、邪道幻化(外观-属性分离Bug)、9位女主的Bug穿搭一览",
+        "uid": 50,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 274
+        }
+      },
+      "经济与灵液系统": {
+        "path": "世界书/系统规则/经济与灵液系统.yaml",
+        "keywords": [
+          "经济",
+          "金币",
+          "灵液",
+          "货币",
+          "负数物价",
+          "下溢",
+          "复制"
+        ],
+        "abstract": "双轨制货币(金币+灵液滴)、原初灵液用途与代价、经济邪道(负数物价/金币下溢/物品复制)、血棘贵族商贸垄断",
+        "uid": 51,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 275
+        }
+      },
+      "时空篡改规则": {
+        "path": "世界书/系统规则/时空篡改规则.yaml",
+        "keywords": [
+          "时空",
+          "传送",
+          "Wrong Warp",
+          "时间回拨",
+          "任务标记",
+          "篡改",
+          "存档"
+        ],
+        "abstract": "时空操控机制：Wrong Warp(错位传送)、系统时钟回拨(时间回退)、任务标记篡改(远程任务完成)的操作方式、效果与限制",
+        "uid": 52,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 276
+        }
+      }
+    },
+    "MVU": {
+      "[mvu_update]变量输出格式": {
+        "path": "世界书/变量/变量输出格式.txt",
+        "part": "output_format",
+        "keywords": [],
+        "abstract": "MVU变量输出格式",
+        "uid": 63,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 280
+        }
+      },
+      "变量列表": {
+        "path": "世界书/变量/变量列表.txt",
+        "part": "variable_list",
+        "keywords": [],
+        "abstract": "MVU变量列表",
+        "uid": 64,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 290
+        }
+      },
+      "[mvu_update]变量更新规则": {
+        "path": "世界书/变量/变量更新规则.yaml",
+        "part": "update_rules",
+        "keywords": [],
+        "abstract": "MVU变量更新规则",
+        "uid": 65,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 300
+        }
+      },
+      "[InitVar]请勿打开": {
+        "path": "世界书/变量/initvar.yaml",
+        "part": "initvar",
+        "keywords": [],
+        "abstract": "MVU初始变量",
+        "uid": 66,
+        "enabled": false,
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 310
+        }
+      }
+    }
+  },
+  "typeLists": {
+    "before_char": [
+      "EJS预处理",
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "地理"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "阶段指导",
+      "事件",
+      "系统规则",
+      "MVU"
+    ]
+  },
+  "strategyThresholds": {
+    "角色": {
+      "basic": {
+        "threshold": 5,
+        "required": true
+      },
+      "other": {
+        "threshold": 2,
+        "required": false
+      },
+      "personality": {
+        "threshold": 2,
+        "required": true
+      },
+      "tri_faceted": {
+        "threshold": 2,
+        "required": false
+      }
+    },
+    "事件": 0,
+    "地理": {
+      "faction": {
+        "threshold": 4,
+        "required": false
+      },
+      "region": {
+        "threshold": 4,
+        "required": false
+      },
+      "scene": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "MVU": {
+      "initvar": {
+        "threshold": null,
+        "required": false
+      },
+      "output_format": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "update_rules": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "variable_list": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "NPC": 0,
+    "EJS预处理": "Infinity",
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "plot": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "世界观": "Infinity",
+    "阶段指导": "Infinity",
+    "系统规则": "Infinity"
+  },
+  "partOrder": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "地理": [
+      "region",
+      "scene",
+      "faction"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "",
+  "first_messages": [
+    "开场白/0.txt",
+    "开场白/1.txt"
+  ],
+  "creator": "",
+  "creator_notes": "",
+  "version": "1.0",
+  "create_date": "2026-07-06T08:20:01.471Z",
+  "extensions": {
+    "tavern_helper": {
+      "scripts": {
+        "MVU": {
+          "type": "script",
+          "script_file": "脚本/MVU.txt",
+          "enabled": true,
+          "id": "d0311ca6-5e9a-498e-a777-f74dc4dc6b12",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": [
+              {
+                "name": "重新处理变量",
+                "visible": true
+              },
+              {
+                "name": "重新读取初始变量",
+                "visible": true
+              },
+              {
+                "name": "快照楼层",
+                "visible": false
+              },
+              {
+                "name": "重演楼层",
+                "visible": false
+              },
+              {
+                "name": "重试额外模型解析",
+                "visible": false
+              },
+              {
+                "name": "清除旧楼层变量",
+                "visible": false
+              }
+            ]
+          },
+          "data": {}
+        },
+        "Zod": {
+          "type": "script",
+          "script_file": "脚本/Zod.txt",
+          "enabled": true,
+          "id": "5b3b09af-35e3-4149-a0f7-2f08776ed6a1",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": []
+          },
+          "data": {}
+        }
+      },
+      "variables": {}
+    },
+    "talkativeness": "0.5",
+    "fav": false,
+    "depth_prompt": {
+      "prompt": "",
+      "depth": 4,
+      "role": "system"
+    }
+  },
+  "regex_scripts": {
+    "对AI隐藏状态栏": {
+      "id": "b5f2606f-69cc-4a6a-8ebb-bd8a3b7f671f",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "replaceString": "",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    },
+    "状态栏界面": {
+      "id": "ce6da13c-4e35-4057-8964-3192b7903acc",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "replace_file": "正则/状态栏界面.html",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    },
+    "对AI隐藏变量更新": {
+      "id": "aa12731a-97c4-4450-ac2f-0bfe1d6a4f64",
+      "findRegex": "/<(update(?:variable)?)>(?:(?!.*<\\/\\1>)(?:(?!<\\1>).)*$|(?:(?!<\\1>).)*<\\/\\1?>)/gsi",
+      "replaceString": "",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": false,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    },
+    "变量更新中美化": {
+      "id": "b9d5f25b-a9d0-41bf-8a69-602d64bbde22",
+      "findRegex": "/<(update(?:variable)?)>(?!.*<\\/\\1>)\\s*((?:(?!<\\1>).)*)\\s*$/gsi",
+      "replace_file": "正则/变量更新中美化.html",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": false,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    },
+    "变量更新美化": {
+      "id": "92d49340-fe5e-4929-871f-43d110e5ec76",
+      "findRegex": "/<(update(?:variable)?)>\\s*((?:(?!<\\1>).)*)\\s*<\\/\\1>/gsi",
+      "replace_file": "正则/变量更新美化.html",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": false,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    }
+  }
+}

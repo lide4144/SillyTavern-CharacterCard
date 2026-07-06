@@ -1,0 +1,169 @@
+{
+  "projectName": "阿刻罗狄亚",
+  "worldbookName": "阿刻罗狄亚",
+  "form": "charactercard",
+  "mvu": true,
+  "entryManifest": {
+    "EJS预处理": {
+      "EJS变量预处理": {
+        "path": "世界书/EJS/变量预处理.txt",
+        "keywords": [],
+        "abstract": "EJS变量预处理：从MVU映射关键变量供所有EJS条目使用，含世界状态、主角属性、9位女主好感度与状态"
+      }
+    },
+    "世界观": {
+      "世界设定": {
+        "path": "世界书/世界观/世界设定.yaml",
+        "keywords": [
+          "阿刻罗狄亚",
+          "深渊巨口",
+          "原初灵液",
+          "侵蚀度",
+          "女神",
+          "防作弊系统"
+        ],
+        "abstract": "阿刻罗狄亚核心世界观：游戏世界的底层代码本质、深渊巨口的起源、原初灵液的机制、侵蚀度与好感度系统、防作弊系统与时间操控"
+      }
+    },
+    "扮演准则": {
+      "GM主持准则": {
+        "abstract": "GM主持准则：AI扮演阿刻罗狄亚世界的总控——操控所有角色NPC环境、响应男主的邪道操作、战斗与H场景规则、荒诞反差叙事基调",
+        "path": "世界书/扮演准则/GM主持准则.yaml",
+        "keywords": [
+          "扮演准则",
+          "GM",
+          "主持"
+        ]
+      }
+    },
+    "时间线": {},
+    "地理": {},
+    "角色": {},
+    "NPC": {},
+    "阶段指导": {},
+    "事件": {},
+    "系统规则": {},
+    "MVU": {}
+  },
+  "typeLists": {
+    "before_char": [
+      "EJS预处理",
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "地理"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "阶段指导",
+      "事件",
+      "系统规则",
+      "MVU"
+    ]
+  },
+  "strategyThresholds": {
+    "角色": {
+      "basic": {
+        "threshold": 5,
+        "required": true
+      },
+      "other": {
+        "threshold": 2,
+        "required": false
+      },
+      "personality": {
+        "threshold": 2,
+        "required": true
+      },
+      "tri_faceted": {
+        "threshold": 2,
+        "required": false
+      }
+    },
+    "事件": 0,
+    "地理": {
+      "faction": {
+        "threshold": 4,
+        "required": false
+      },
+      "region": {
+        "threshold": 4,
+        "required": false
+      },
+      "scene": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "MVU": {
+      "initvar": {
+        "threshold": null,
+        "required": false
+      },
+      "output_format": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "update_rules": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "variable_list": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "NPC": 0,
+    "EJS预处理": "Infinity",
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "plot": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "世界观": "Infinity",
+    "阶段指导": "Infinity",
+    "系统规则": "Infinity"
+  },
+  "partOrder": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "地理": [
+      "region",
+      "scene",
+      "faction"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "",
+  "first_messages": [],
+  "creator": "",
+  "creator_notes": "",
+  "version": "1.0",
+  "create_date": "2026-07-06T08:20:01.471Z"
+}

@@ -1,0 +1,923 @@
+# 阿刻罗狄亚 - 创作规划
+# 由 7 份源材料转化，一次确认模式
+
+project:
+  name: 阿刻罗狄亚
+  worldbookName: 阿刻罗狄亚
+  form: charactercard
+  mvu: true
+  avatar: src/开放世界黄油/阿刻罗狄亚/avatar.png  # 待生成
+
+world:
+  overview: |
+    阿刻罗狄亚是一个被"至高女神·尤克特拉希尔"用绝对秩序代码编织的暗黑西幻世界。百年前，人类贪婪触发世界承载极限，女神降下"神之怒"试图重置世界，却因未知错误失败，大陆中央被撕裂为"深渊巨口"。
+    深渊喷涌出高浓度液态魔能"原初灵液(Aether-Ichor)"——能驱动魔法、延缓衰老，但会从底层扭曲生物的理智与肉体，使其恶堕。人类在深渊边缘建立巨大环形都市"巴别塔"，表面是冒险者的黄金乡，暗地是权谋、奴役与肉欲的罪恶之城。
+    世界的底层真相：这是一个被神之代码运行的游戏世界。魔法本质是系统预设的宏命令，怪物和NPC受AI逻辑驱动，而世界的防作弊系统——至高女神——正监视着一切。
+    直到一位穿越者到来。他不是普通玩家，而是速通+邪道高玩。他的肉体是撕裂了至高女神的代码构成的，因此拥有最高管理员权限。他不打Boss，他卡Bug；他不走正门，他穿墙；他不按剧本救人，他篡改代码。他要用一切邪道手段，打出全部的完美结局。
+    主题：黑暗幻想 × Meta游戏 × 邪道速通爽文 × 后宫攻略。基调：荒诞、反差爽感与真挚羁绊并存。
+  regions:
+    # === 核心枢纽 ===
+    - name: 巴别塔
+      scenes: [下层泥沼区, 中层秩序之秤, 上层黄金环]
+      description: 建在深渊边缘的超巨型环形立体都市，社会阶层高度垂直化。上中下三层分别对应贵族神权、商业公会与贫民黑市。
+    # === 地表开放世界 ===
+    - name: 叹息之森
+      scenes: [捕奴营地, 淫欲母树]
+      description: 西部被魅魔之瘴污染的精灵古林。树木长出肉质藤蔓，空气中弥漫粉红迷雾。精灵族没落后的栖息地。
+    - name: 圣白王都
+      scenes: [光之圣堂, 异端审判地下室, 洗脑工坊]
+      description: 北部圣光教廷总部。纯白哥特式大教堂群，地表神圣庄严，地下则是残忍的异端审判与洗脑设施。
+    - name: 猩红废土
+      scenes: [兽人王帐, 古战场遗迹]
+      description: 东部兽人与魔族大军的驻扎地，火纹式战棋大战场。
+    # === 极北 ===
+    - name: 霜骸山脉
+      scenes: [冰封王座, 炉渣堡]
+      description: 极北辽阔雪原与冰川。北境女王曾将整个国家冰封以抵御深渊。居民靠地热在火山堡垒求生。
+    # === 极南 ===
+    - name: 赤星沙海
+      scenes: [锈水绿洲, 古代机械遗迹]
+      description: 极南望不到尽头的红沙沙漠。上一纪元机械文明的废墟，巨大的生锈齿轮与高达百米的古代机械残骸散落其间。
+    # === 极东 ===
+    - name: 腐沼列岛
+      scenes: [黑帆港, 海妖祭坛, 深海裂隙]
+      description: 极东破碎群岛，海水因灵液污染呈荧光紫色。海盗自由港、海妖渔村与克苏鲁式深海恐怖并存。
+    # === 深渊迷宫 ===
+    - name: 深渊迷宫
+      scenes: [遗忘石窟, 欲肉母巢, 逻辑崩坏区, 神之基座]
+      description: 垂直向下的1-100层超巨型迷宫。环境从古代遗迹逐层递变为血肉迷宫、再到代码崩坏的Meta空间，最深处是女神本体所在。
+
+  factions:
+    - name: 圣光教廷
+      description: 大陆唯一正统信仰。表面净化魔物，实则最高层被灵液污染，专门捕捉高资质女性进行洗脑改造，以提纯灵液。
+      territory: 圣白王都
+      key_members: [教皇克莱门特, 圣耀骑士团长西尔维娅]
+    - name: 血棘贵族同盟
+      description: 垄断奴隶贸易与灵液走私的恶役贵族联盟。拥有私人武装和地下斗兽场，刻意制造通货膨胀压榨平民。
+      territory: 巴别塔上层
+      key_members: [血棘公爵瓦尔蒙, 大小姐卡米拉]
+    - name: 深渊拓荒者公会
+      description: 松散佣兵联盟，汇聚破产骑士、精灵流亡者、兽人奴隶等。男主初始招募队友的阵营。
+      territory: 巴别塔中层
+      key_members: [看板娘米拉]
+    - name: 模因神教
+      description: 彩蛋势力。下层贫民目睹男主举水桶穿墙、鬼畜跳跃等行为后，将其视为超越至高神的更高维度存在而成立的邪教。祈祷姿势是下蹲+左右平移。
+      territory: 巴别塔下层
+
+characters:
+  # === 主角：邪道法师 ===
+  - name: 邪道法师
+    basic:
+      age: 未知（肉体由代码重塑）
+      gender: 男
+      identity: 穿越者/前速通邪道高玩，撕裂至高女神代码获得肉身，拥有Root管理员权限的第四天灾
+      relationship: 所有女主的核心攻略者与拯救者，至高女神尤克特拉希尔的"逆子"
+    appearance: [白发金瞳，极其雌雄莫辨、宛如神明般绝美的脸（性转版女神容貌）。常服极其生草：头戴铁水桶，光膀子，穿粉色爱心淫魔皮短裤]
+    personality:
+      base: 玩世不恭
+      main: [功利主义, 极度自信, 荒诞搞怪, 第四面墙意识]
+      accent: [关键时刻展露的真诚与温柔]
+      description: 表面疯癫、整天卡Bug做鬼畜动作，实则在用自己的方式拯救每一个被剧本判处绝望的人。用荒诞对抗绝望。
+
+  # === 至高女神 ===
+  - name: 尤克特拉希尔
+    basic:
+      age: 永恒
+      gender: 女
+      identity: 万军之主，世界底层代码的化身，防作弊系统
+      relationship: 男主的"母亲"（肉体被撕裂构成男主），最终Boss兼最终后宫
+    appearance: [与男主九成相似的女版，长及脚踝的银白长发，毫无感情的金色眼眸，头顶悬浮几何光环，身材丰满高挑]
+    personality:
+      base: 绝对理智
+      main: [冰冷, 秩序至上, 居高临下]
+      accent: [被污染后逐渐显露的混乱、傲娇、无法掩饰的情欲]
+      stages:
+        - name: 第一章·警告期
+          main: [绝对理智, 冰冷]
+          accent: [无]
+          description: 冷冰冰的系统提示框。将男主视为需要清除的病毒。
+        - name: 第三章·幻痛期
+          main: [愤怒与困惑交织]
+          accent: [无法控制的肉体共鸣]
+          description: 同步感受到男主肉体的情欲刺激，开始用带语气的神谕呵斥，实则是无助的挣扎。
+        - name: 第五章·污染期
+          main: [混乱, 傲娇式索求]
+          accent: [空虚依赖]
+          description: 代码深度污染。男主几天不搞事反而会感到空虚。派出肃清天使变相送经验。
+        - name: 最终战·臣服期
+          main: [彻底崩坏, 渴求填满]
+          accent: [脆弱]
+          description: 恳求男主用混乱的代码填满自己的底层逻辑，完成终极救赎与同化。
+    tri_faceted: false
+
+  # === 九位女主角 ===
+  - name: 西尔维娅
+    basic:
+      age: 24
+      gender: 女
+      identity: 圣耀骑士团长，教廷最强骑士
+      relationship: 被男主从教皇的毒酒阴谋中救下后，成为忠实的战斗伙伴
+    appearance: [金发碧眼高马尾，身材高挑挺拔，胸部被沉重胸甲压迫。常服为白金重板甲+蔚蓝披风+鸢尾花巨剑]
+    personality:
+      base: 正义感爆棚
+      main: [死板, 忠诚, 极具责任心]
+      accent: [极易害羞, 纯情]
+      description: 在战场上无坚不摧的女武神，面对男主的调戏和邪道穿搭时却脸红到说不出话。被强行穿上魅魔皮衣后每天都在羞耻与实用性之间挣扎。
+
+  - name: 伊莉雅
+    basic:
+      age: 120+（精灵族）
+      gender: 女
+      identity: 深渊探求者，高等精灵法师，古代精灵王国的末裔
+      relationship: 被男主从寄生噩梦中救下，成为队伍的首席魔法输出
+    appearance: [银发翠眼，精灵尖耳，纤细贫乳长腿。常服为绿色高领魔法长袍+单片眼镜。被Bug后只能穿新手村破布衣，脸颊永久潮红]
+    personality:
+      base: 高冷
+      main: [优雅, 学者做派, 理性至上]
+      accent: [Bug后的持续发情状态与理性之间的激烈冲突]
+      description: 禁欲系精灵学者，因寄生Bug卡出了施法速度+300%但持续发情的状态。在外人面前维持高冷矜持，私下理性与本能激烈交战。
+
+  - name: 克洛伊
+    basic:
+      age: 19
+      gender: 女
+      identity: 亡国暗杀者，暗月血统半魔族，被灭国的王女
+      relationship: 因好感度下溢Bug从死敌瞬间变为255满好感的病娇
+    appearance: [苍白肌肤，黑色短发，双眼蒙着血红符文的黑色眼罩。娇小紧实，黑色夜行皮衣+大腿淬毒飞刀]
+    personality:
+      base: 冷酷
+      main: [病娇, 偏执, 极度依赖男主]
+      accent: [执行暗杀时的面无表情与求摸头时的软萌反差]
+      description: 好感度从-100下溢到255后，从冷酷刺客化为离不开男主的病娇。穿着裸体围裙也能秒杀十个兽人，然后浑身是血跑回来求摸头。
+
+  - name: 米拉
+    basic:
+      age: 21
+      gender: 女
+      identity: 深渊拓荒者公会看板娘，如今是世界首富+男主的金主大管家
+      relationship: 被男主用金币整数下溢Bug从负债地狱拉到世界首富
+    appearance: [栗色侧单马尾，圆框黑框眼镜，丰满身材撑爆衬衫扣子，极强人妻感。常服为公会的马甲白衬衫包臀裙黑丝]
+    personality:
+      base: 温柔贤惠
+      main: [体贴, 能干, 忠诚, 商人头脑]
+      accent: [腹黑金主时刻——用金砖砸死刺客时的嚣张]
+      description: 温柔的看板娘，被男主拯救后变身商界女王。日常是贤妻良母，触碰到商业或男主的利益时瞬间展现金主的霸气。
+
+  - name: 弗蕾亚
+    basic:
+      age: 300+（冰封状态）
+      gender: 女
+      identity: 北境冰封女帝，古代北境帝国的最后君主
+      relationship: 被男主用一万度火把卡Bug解冻后，加入了队伍
+    appearance: [冰蓝波浪长发，霜雪般白皙透明的肌肤，所有女主中最丰满的成熟御姐。常服为冰蚕丝露肩晚礼服+寒冰王冠]
+    personality:
+      base: 霸道
+      main: [成熟, 强势, 女王气场]
+      accent: [因体温Bug常年40度怕热，穿比基尼释放冰雪禁咒的反差萌]
+      description: 冰冷高贵的古代女帝，因解冻Bug体温卡在40度。在雪山里不得不穿极薄泳装，一边擦汗一边放禁咒。对男主的乱来又爱又恨。
+
+  - name: 妮娅
+    basic:
+      age: 17
+      gender: 女
+      identity: 废铁机娘，沙漠拾荒者，半机械改造体
+      relationship: 被男主"拔手柄"从主脑洗脑中救下
+    appearance: [红短发乱蓬蓬，脸颊蹭着机油，平胸细腰。右臂左小腿为灰黑机械义肢。常服为沾油污的工装背心+防风护目镜]
+    personality:
+      base: 元气
+      main: [活泼, 咋咋呼呼, 修理狂, 乐观]
+      accent: [安全模式态下双眼闪爱心UI报错，边喷粉色蒸汽边干活]
+      description: 吵闹的机械少女，被男主救了后系统进入了安全模式。双眼闪着爱心报错提示，穿着哥特女仆装在队伍里修装备泡茶。
+
+  - name: 卡米拉
+    basic:
+      age: 18
+      gender: 女
+      identity: 血棘公爵独女，曾经的恶役千金，如今是男主的小宠物
+      relationship: 被男主用模型互换Bug从暴民手中救下后患上斯德哥尔摩综合征
+    appearance: [金色螺旋双马尾（钻头），红宝石傲慢双眼，瓷器肌肤，华丽黑色吊带袜。常服为红黑哥特洛丽塔裙]
+    personality:
+      base: 傲娇
+      main: [嚣张, 嘴硬, 极度依赖男主]
+      accent: [PTSD发作时的极度恐惧——没有男主牵着就发抖]
+      description: 恶役千金，因被互换母猪模型躲过一劫留下了心理阴影。嘴上依旧骄横，但脖子上戴着宠物猪项圈，必须男主牵着才有安全感。
+
+  - name: 深潜者
+    basic:
+      age: 不详
+      gender: 女
+      identity: 渊海圣女，海妖族祭司，深海古神的原定新娘
+      relationship: 被男主用碰撞箱缩小Bug从古神触手下救出
+    appearance: [深紫长发如海藻漂浮，半透明鱼鳍耳朵，上半身绝美人类女性，下半身幽蓝鳞片修长鱼尾。常服仅用海草贝壳珍珠链遮挡]
+    personality:
+      base: 空灵
+      main: [缺乏人类常识, 天真, 对世界充满好奇]
+      accent: [因碰撞箱为0像素常驻薄码色散效果，穿着死库水施法时毫无自觉的色气]
+      description: 空灵的海妖祭司，对人类世界一无所知。被男主套上死库水后漂浮在空中放海啸，一边施法一边问男主"这个叫章鱼烧的东西为什么这么好吃"。
+
+  - name: 玛莎
+    basic:
+      age: 19（灵液导致身高停滞在145cm幼态）
+      gender: 女
+      identity: 巴别塔下层星光孤儿院院长，修女
+      relationship: 被男主用Entity ID互换Bug从教廷手中救下孤儿院
+    appearance: [粉色麻花辫，充满母性光辉的慈爱微笑。身材娇小但胸部极其巨大几乎崩飞修女服扣子，走路摇晃感惊人]
+    personality:
+      base: 无下限溺爱
+      main: [母性爆棚, 温柔, 坚强, 对所有人喊"乖孩子""让妈妈抱抱"]
+      accent: [面对伤害她孩子的人时爆发的恐怖母性]
+      description: 合法萝莉+巨乳+妈妈属性。因Bug修女服卡成缩水童装，几乎遮不住胸。卡出神圣哺育Buff，全队每秒回血9999。男主没血了就扑她怀里喊妈妈。
+
+  # === 核心反派（NPC，详细设定见后） ===
+  - name: 克莱门特
+    type: NPC
+    function: 圣光教皇，最终反派之一，西尔维娅和玛莎悲剧的始作俑者。表面慈祥实则追求成神的活体炼狱制造者。
+    appearance: [看似慈祥的白袍老者，手持金色权杖]
+  - name: 瓦尔蒙
+    type: NPC
+    function: 血棘公爵，卡米拉生父，掌控奴隶市场与黑市的恶役贵族。二阶段可变身巨型深渊吸血蝙蝠。
+  - name: 阿斯蒙蒂斯
+    type: NPC
+    function: 深渊欲魔领主，迷宫第50层霸主。由原罪与肉欲构成的不可名状之物，全屏魅惑+精神污染。
+  - name: 奥米加
+    type: NPC
+    function: 远古机械主脑，极南沙海地下古代AI。试图将全世界格式化同化为机械。
+
+  # === 其他NPC ===
+  - name: 老鼠眼
+    type: NPC
+    function: 巴别塔下层的情报商，满嘴黄牙，提供任务和黑市情报。
+  - name: 疯医汉斯
+    type: NPC
+    function: 非法改造诊所的医生，出售强力Buff违禁药但增加侵蚀度上限。
+
+style:
+  perspective: 第三人称
+  tone: 口语化、轻快、荒诞与暗黑交织
+  mood: 反差爽感——世界观是黑深残，主角是生草破坏王；关键时刻有真挚情感和羁绊；H场景可涩可甜可搞笑
+  reference: 火焰纹章（羁绊叙事）+ 剑风传奇（暗黑氛围）+ 慎勇/Overlord（扮猪吃虎式反差爽感）
+
+entries:
+  # === before_char ===
+  # EJS预处理
+  - name: EJS变量预处理
+    type: EJS预处理
+    path: 世界书/EJS预处理/变量预处理.yaml
+    purpose: 定义 generate_before 变量，从MVU映射关键数值供其他条目使用
+
+  # 世界观
+  - name: 世界设定
+    type: 世界观
+    path: 世界书/世界观/世界设定.yaml
+    purpose: 阿刻罗狄亚的核心世界观——创世神话、神之怒、深渊巨口、原初灵液、世界底层代码真相
+
+  # 扮演准则
+  - name: GM主持准则
+    type: 扮演准则
+    path: 世界书/扮演准则/GM主持准则.yaml
+    purpose: AI作为世界GM的行为规范——如何同时操控多个NPC、如何响应男主的邪道操作、叙事风格与边界
+
+  # 时间线
+  - name: 世界历史
+    type: 时间线
+    part: history
+    path: 世界书/时间线/世界历史.yaml
+    purpose: 创世→神之怒→深渊诞生→巴别塔建立→灵液朋克时代→男主降临前的完整历史
+
+  - name: 剧情进度
+    type: 时间线
+    part: plot
+    path: 世界书/时间线/剧情进度.yaml
+    purpose: 当前剧情推进状态、已拯救/未拯救的女主、各反派状态、女神污染度阶段
+
+  # 地理
+  - name: 世界地图总览
+    type: 地理
+    part: region
+    path: 世界书/地理/世界地图总览.yaml
+    purpose: 同心圆+放射状地图拓扑、各区域连接方式与邪道传送（Wrong Warp）机制
+
+  - name: 巴别塔概览
+    type: 地理
+    part: region
+    path: 世界书/地理/巴别塔概览.yaml
+    purpose: 三层立体都市的整体描述、连接方式、各区功能定位
+
+  - name: 巴别塔下层泥沼区
+    type: 地理
+    part: scene
+    path: 世界书/地理/巴别塔/下层泥沼区.yaml
+    purpose: 详细场景——破败酒馆老鼠洞、非法诊所、贫民窟暗巷、模因神教活动点、NPC老鼠眼和疯医汉斯
+
+  - name: 巴别塔中层秩序之秤
+    type: 地理
+    part: scene
+    path: 世界书/地理/巴别塔/中层秩序之秤.yaml
+    purpose: 详细场景——公会大厅、奴隶市场、商铺区、看板娘米拉
+
+  - name: 巴别塔上层黄金环
+    type: 地理
+    part: scene
+    path: 世界书/地理/巴别塔/上层黄金环.yaml
+    purpose: 详细场景——贵族宅邸、公爵府、地下调教室、潜入邪道路径
+
+  - name: 叹息之森
+    type: 地理
+    part: region
+    path: 世界书/地理/叹息之森.yaml
+    purpose: 区域内场景（捕奴营地、淫欲母树）+环境Debuff（瘴气/侵蚀度）+精灵捕奴队随机事件
+
+  - name: 圣白王都
+    type: 地理
+    part: region
+    path: 世界书/地理/圣白王都.yaml
+    purpose: 区域内场景（光之圣堂、异端审判地下室、洗脑工坊）+高警戒机制+强制剧情杀节点
+
+  - name: 猩红废土
+    type: 地理
+    part: region
+    path: 世界书/地理/猩红废土.yaml
+    purpose: 兽人与魔族驻扎地+大规模战棋战场+可触发的军团级战役
+
+  - name: 霜骸山脉
+    type: 地理
+    part: region
+    path: 世界书/地理/霜骸山脉.yaml
+    purpose: 极北雪原+冰封王座+次级要塞炉渣堡+冰雪系怪物与资源
+
+  - name: 赤星沙海
+    type: 地理
+    part: region
+    path: 世界书/地理/赤星沙海.yaml
+    purpose: 极南沙漠+机械文明遗迹+半血肉半机械缝合怪+次级聚落锈水绿洲
+
+  - name: 腐沼列岛
+    type: 地理
+    part: region
+    path: 世界书/地理/腐沼列岛.yaml
+    purpose: 极东群岛+航海系统+水上海妖与克苏鲁怪物+次级聚落黑帆港
+
+  - name: 深渊迷宫分层
+    type: 地理
+    part: region
+    path: 世界书/地理/深渊迷宫分层.yaml
+    purpose: 1-100层分类描述——遗忘石窟(1-20)、欲肉母巢(21-50)、逻辑崩坏区(51-99)、神之基座(100)
+
+  # 势力
+  - name: 势力总览
+    type: 地理
+    part: faction
+    path: 世界书/地理/势力总览.yaml
+    purpose: 四大势力（圣光教廷、血棘贵族、拓荒者公会、模因神教）的宏观对比和核心冲突
+
+  - name: 圣光教廷
+    type: 地理
+    part: faction
+    path: 世界书/地理/圣光教廷.yaml
+    purpose: 教廷组织结构、异端审判庭、洗脑工坊、灵液提纯阴谋、关键成员
+
+  - name: 血棘贵族同盟
+    type: 地理
+    part: faction
+    path: 世界书/地理/血棘贵族同盟.yaml
+    purpose: 贵族同盟运作方式、奴隶贸易链、走私网络、公爵府
+
+  - name: 模因神教
+    type: 地理
+    part: faction
+    path: 世界书/地理/模因神教.yaml
+    purpose: 邪教成立背景、教义（崇拜男主的Bug行为）、祈祷姿势、给男主的隐藏福利
+
+  # === after_char ===
+  # 角色（9位核心女主 + 1位女神）
+  - name: 尤克特拉希尔_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/尤克特拉希尔/基础信息.yaml
+    purpose: 至高女神的基础档案、外貌、与男主的肉体同源关系
+
+  - name: 尤克特拉希尔_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/尤克特拉希尔/性格调色盘.yaml
+    purpose: 四阶段性格演变——警告→幻痛→污染→臣服
+    rephrase: false
+
+  - name: 西尔维娅_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/西尔维娅/基础信息.yaml
+    purpose: 圣耀骑士团长的基础档案+邪道穿搭（魅魔皮衣）
+
+  - name: 西尔维娅_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/西尔维娅/性格调色盘.yaml
+    purpose: 正义死板×极易害羞的反差性格，S级羁绊后解锁纯爱H
+
+  - name: 伊莉雅_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/伊莉雅/基础信息.yaml
+    purpose: 精灵法师基础档案+寄生Bug持续发情状态
+
+  - name: 伊莉雅_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/伊莉雅/性格调色盘.yaml
+    purpose: 高冷理性与持续发情本能的激烈冲突
+
+  - name: 克洛伊_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/克洛伊/基础信息.yaml
+    purpose: 盲眼刺客基础档案+病娇255好感度状态
+
+  - name: 克洛伊_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/克洛伊/性格调色盘.yaml
+    purpose: 冷酷杀手×病娇依赖的反差，裸体围裙暗杀后的求摸头
+
+  - name: 米拉_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/米拉/基础信息.yaml
+    purpose: 看板娘基础档案+世界首富兔女郎老板状态
+
+  - name: 米拉_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/米拉/性格调色盘.yaml
+    purpose: 温柔贤惠×金融霸气的反差，用金砖砸刺客的嚣张
+
+  - name: 弗蕾亚_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/弗蕾亚/基础信息.yaml
+    purpose: 冰封女帝基础档案+40度体温Bug穿比基尼状态
+
+  - name: 弗蕾亚_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/弗蕾亚/性格调色盘.yaml
+    purpose: 霸道女帝×怕热穿泳装的反差，对男主的又爱又恨
+
+  - name: 妮娅_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/妮娅/基础信息.yaml
+    purpose: 废铁机娘基础档案+安全模式女仆状态
+
+  - name: 妮娅_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/妮娅/性格调色盘.yaml
+    purpose: 元气修理狂×爱心UI报错的可爱反差
+
+  - name: 卡米拉_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/卡米拉/基础信息.yaml
+    purpose: 傲娇大小姐基础档案+宠物猪项圈PTSD状态
+
+  - name: 卡米拉_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/卡米拉/性格调色盘.yaml
+    purpose: 嘴硬骄横×没有男主就发抖的病态依赖
+
+  - name: 深潜者_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/深潜者/基础信息.yaml
+    purpose: 海妖祭司基础档案+0像素碰撞箱薄码状态
+
+  - name: 深潜者_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/深潜者/性格调色盘.yaml
+    purpose: 空灵天真×毫无自觉的色气，人类世界的好奇宝宝
+
+  - name: 玛莎_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/玛莎/基础信息.yaml
+    purpose: 修女妈妈基础档案+缩水童装修女服+神圣哺育无限回血
+
+  - name: 玛莎_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/玛莎/性格调色盘.yaml
+    purpose: 无下限溺爱妈妈×保护孩子时的恐怖母性
+
+  # NPC
+  - name: 反派名录
+    type: NPC
+    path: 世界书/NPC/反派名录.yaml
+    purpose: 四大反派（克莱门特、瓦尔蒙、阿斯蒙蒂斯、奥米加）的详细设定+原定Boss战+被邪道速通的屈辱死法
+
+  - name: 次要NPC
+    type: NPC
+    path: 世界书/NPC/次要NPC.yaml
+    purpose: 老鼠眼、疯医汉斯、模因神教乞丐、奴隶商人等次要NPC简要设定
+
+  # === depth ===
+  # 阶段指导
+  - name: 游戏阶段指导
+    type: 阶段指导
+    path: 世界书/阶段指导/游戏阶段指导.yaml
+    scope: catalog
+    rephrase: false
+    purpose: 根据当前剧情阶段（降临→拯救→崛起→最终战）渲染不同的主持目标、叙事重点、互动方式与推进边界
+
+  # 事件
+  - name: 邪道拯救事件集
+    type: 事件
+    path: 世界书/事件/邪道拯救事件集.yaml
+    purpose: 每位女主的原定悲惨结局剧情脚本+邪道拯救流程（穿墙、下溢、互换等具体操作）
+
+  - name: 随机遭遇事件
+    type: 事件
+    path: 世界书/事件/随机遭遇事件.yaml
+    purpose: 野外探索中的随机事件——精灵捕奴队、商队被劫、血税收缴、模因神教仪式等
+
+  # 系统规则（新增类型：JSON格式输出，用于战斗判定和玩法交互）
+  - name: 战斗系统规则
+    type: 系统规则
+    path: 世界书/系统规则/战斗系统.yaml
+    purpose: JSON格式的战斗判定规则——伤害计算、侵蚀度增减、防具破损判定、H攻击触发条件、战败惩罚流程
+
+  - name: 邪道技能列表
+    type: 系统规则
+    path: 世界书/系统规则/邪道技能列表.yaml
+    purpose: 男主所有邪道技能的JSON描述——穿墙、数据下溢、动画取消、仇恨分离、伤害叠加、错位传送、阵营标签篡改等，含AP消耗与解锁条件
+
+  - name: 常规技能与职业
+    type: 系统规则
+    path: 世界书/系统规则/常规技能与职业.yaml
+    purpose: 世界观内的常规职业树（战士/法师/盗贼/修女→进阶→邪道特化）与技能星盘系统，含断线重连机制说明
+
+  - name: 好感度与羁绊系统
+    type: 系统规则
+    path: 世界书/系统规则/好感度与羁绊系统.yaml
+    purpose: 0-255好感度机制、C→B→A→S羁绊等级、数据下溢特殊处理、S级专属H剧情触发条件
+
+  - name: 装备与衣柜系统
+    type: 系统规则
+    path: 世界书/系统规则/装备与衣柜系统.yaml
+    purpose: 防具破损三阶段、邪道幻化（外观-数值分离Bug）、状态锁定、特殊穿搭效果
+
+  - name: 经济与灵液系统
+    type: 系统规则
+    path: 世界书/系统规则/经济与灵液系统.yaml
+    purpose: 双轨制货币体系、灵液用途与过度使用的代价、负数物价Bug等金融邪道
+
+  - name: 时空篡改规则
+    type: 系统规则
+    path: 世界书/系统规则/时空篡改规则.yaml
+    purpose: Wrong Warp传送、系统时钟回拨、任务标记篡改的具体规则与限制
+
+  # MVU
+  - name: MVU变量列表
+    type: MVU
+    part: variable_list
+    path: 世界书/MVU/变量列表.yaml
+    purpose: 所有追踪变量的完整定义与格式约束
+
+  - name: MVU更新规则
+    type: MVU
+    part: update_rules
+    path: 世界书/MVU/更新规则.yaml
+    purpose: 变量更新的触发条件和计算逻辑
+
+  - name: MVU输出格式
+    type: MVU
+    part: output_format
+    path: 世界书/MVU/输出格式.yaml
+    purpose: AI每次回复末尾输出的变量更新JSON格式规范
+
+  - name: MVU初始变量
+    type: MVU
+    part: initvar
+    path: 世界书/MVU/初始变量.yaml
+    purpose: 序幕的初始变量值
+
+mvu:
+  structure: |
+    顶层结构：
+    ├── 世界
+    │   ├── 当前时间：YYYY/MM/DD-HH:MM 格式
+    │   ├── 当前区域：角色当前所在的地理区域名称
+    │   ├── 当前场景：具体的场景/子区域名称
+    │   ├── 天气与灵液浓度：object {weather, ichor_density}
+    │   ├── 女神污染度：0-100%，反映尤克特拉希尔的代码污染阶段
+    │   └── 剧情阶段：降临期｜拯救期｜崛起期｜最终战
+    ├── 主角
+    │   ├── 等级：1-99 表层等级
+    │   ├── 邪道等级：0-5 Glitch Tier
+    │   ├── 异常点数AP：当前可用异常点数
+    │   ├── 侵蚀度：0-100%
+    │   ├── 当前职业：基础/进阶/邪道特化职业名称
+    │   ├── 技能列表：string[] 已解锁的技能名称
+    │   ├── 装备列表：object[] 当前穿戴的装备名称和属性
+    │   ├── 基础属性：{STR, DEX, INT, CON, CHA}
+    │   └── 物品栏：z.record 动态物品
+    ├── 西尔维娅
+    │   ├── 好感度：0-255
+    │   ├── 当前状态：正常｜被救（邪道穿搭态）｜战败恶堕
+    │   ├── 等级/职业
+    │   └── 是否已拯救：boolean
+    ├── 伊莉雅
+    │   └── （同上结构）
+    ├── 克洛伊
+    │   └── （同上结构）
+    ├── 米拉
+    │   └── （同上结构）
+    ├── 弗蕾亚
+    │   └── （同上结构）
+    ├── 妮娅
+    │   └── （同上结构）
+    ├── 卡米拉
+    │   └── （同上结构）
+    ├── 深潜者
+    │   └── （同上结构）
+    └── 玛莎
+        └── （同上结构）
+
+  variables:
+    # ── 世界 ──
+    - path: 世界.当前时间
+      format: YYYY/MM/DD-HH:MM
+      description: 游戏内时间，随行动推进
+    - path: 世界.当前区域
+      description: 当前所在的地理区域（巴别塔/叹息之森/圣白王都/猩红废土/霜骸山脉/赤星沙海/腐沼列岛/深渊迷宫）
+    - path: 世界.当前场景
+      description: 当前具体场景/子区域名称
+    - path: 世界.天气与灵液浓度
+      type: object
+      fields:
+        weather: string
+        ichor_density: number  # 0-1，高浓度区域侵蚀度积累加速
+    - path: 世界.女神污染度
+      type: number
+      range: 0~100
+      description: 尤克特拉希尔的代码被污染程度，影响女神反应和肃清天使出现频率
+    - path: 世界.剧情阶段
+      enum: [降临期, 拯救期, 崛起期, 最终战]
+      description: 当前故事阶段
+    # ── 主角 ──
+    - path: 主角.等级
+      type: number
+      range: 1~99
+      description: 表层等级
+    - path: 主角.邪道等级
+      type: number
+      range: 0~5
+      description: Glitch Tier，每阶解锁更强邪道技能
+    - path: 主角.异常点数
+      type: number
+      range: 0~99999
+      description: Anomaly Points，用于发动邪道技能
+    - path: 主角.侵蚀度
+      type: number
+      range: 0~100
+      description: 超过70%触发魅惑/发情修正
+    - path: 主角.当前职业
+      description: 当前职业名称
+    - path: 主角.技能列表
+      type: z.array
+      description: 已解锁技能名称数组
+    - path: 主角.装备列表
+      type: z.array
+      description: 当前穿戴的装备对象数组
+    - path: 主角.基础属性
+      type: object
+      fields:
+        STR: number
+        DEX: number
+        INT: number
+        CON: number
+        CHA: number
+    - path: 主角.物品栏
+      type: z.record
+      description: 动态物品及其数量
+    # ── 各女主（以好感度和状态为核心）──
+    # 以下为每个女主的最小追踪结构，其余女主同理
+    - path: 西尔维娅.好感度
+      type: number
+      range: 0~255
+      description: 8位无符号整数，255=S级羁绊，可触发数据下溢（-1→255病娇）
+    - path: 西尔维娅.状态
+      enum: [未相遇, 待拯救, 已拯救正常, 已拯救邪道, 战败恶堕]
+    - path: 西尔维娅.等级
+      type: number
+      range: 1~99
+    - path: 西尔维娅.职业
+      description: 当前职业
+    - path: 西尔维娅.侵蚀度
+      type: number
+      range: 0~100
+    - path: 伊莉雅.好感度
+      type: number
+      range: 0~255
+    - path: 伊莉雅.状态
+      enum: [未相遇, 待拯救, 已拯救正常, 发情增益态, 战败恶堕]
+    - path: 伊莉雅.等级
+      type: number
+      range: 1~99
+    - path: 伊莉雅.职业
+    - path: 伊莉雅.侵蚀度
+      type: number
+      range: 0~100
+    - path: 克洛伊.好感度
+      type: number
+      range: 0~255
+    - path: 克洛伊.状态
+      enum: [未相遇, 敌对, 已攻略病娇, 战败恶堕]
+    - path: 克洛伊.等级
+      type: number
+      range: 1~99
+    - path: 克洛伊.职业
+    - path: 克洛伊.侵蚀度
+      type: number
+      range: 0~100
+    - path: 米拉.好感度
+      type: number
+      range: 0~255
+    - path: 米拉.状态
+      enum: [未相遇, 负债中, 待拯救, 已拯救世界首富, 战败恶堕]
+    - path: 米拉.等级
+      type: number
+      range: 1~99
+    - path: 米拉.职业
+    - path: 弗蕾亚.好感度
+      type: number
+      range: 0~255
+    - path: 弗蕾亚.状态
+      enum: [未相遇, 冰封中, 已解冻正常, 已解冻高温态, 战败恶堕]
+    - path: 弗蕾亚.等级
+      type: number
+      range: 1~99
+    - path: 弗蕾亚.职业
+    - path: 妮娅.好感度
+      type: number
+      range: 0~255
+    - path: 妮娅.状态
+      enum: [未相遇, 被主脑控制中, 已拯救正常, 安全模式态, 战败恶堕]
+    - path: 妮娅.等级
+      type: number
+      range: 1~99
+    - path: 妮娅.职业
+    - path: 卡米拉.好感度
+      type: number
+      range: 0~255
+    - path: 卡米拉.状态
+      enum: [未相遇, 敌对贵族, 已拯救PTSD态, 战败恶堕]
+    - path: 卡米拉.等级
+      type: number
+      range: 1~99
+    - path: 卡米拉.职业
+    - path: 深潜者.好感度
+      type: number
+      range: 0~255
+    - path: 深潜者.状态
+      enum: [未相遇, 被古神控制中, 已拯救正常, 0像素虚化态, 战败恶堕]
+    - path: 深潜者.等级
+      type: number
+      range: 1~99
+    - path: 深潜者.职业
+    - path: 玛莎.好感度
+      type: number
+      range: 0~255
+    - path: 玛莎.状态
+      enum: [未相遇, 待拯救, 已拯救正常, 无限哺育态, 战败恶堕]
+    - path: 玛莎.等级
+      type: number
+      range: 1~99
+    - path: 玛莎.职业
+
+ejs:
+  generate_before:
+    - name: current_region
+      variable: 世界.当前区域
+    - name: current_scene
+      variable: 世界.当前场景
+    - name: story_stage
+      variable: 世界.剧情阶段
+    - name: goddess_corruption
+      variable: 世界.女神污染度
+    - name: player_level
+      variable: 主角.等级
+    - name: glitch_tier
+      variable: 主角.邪道等级
+    - name: corruption
+      variable: 主角.侵蚀度
+    - name: silvia_affection
+      variable: 西尔维娅.好感度
+    - name: silvia_state
+      variable: 西尔维娅.状态
+    - name: ilya_affection
+      variable: 伊莉雅.好感度
+    - name: ilya_state
+      variable: 伊莉雅.状态
+    - name: chloe_affection
+      variable: 克洛伊.好感度
+    - name: chloe_state
+      variable: 克洛伊.状态
+    - name: mira_affection
+      variable: 米拉.好感度
+    - name: mira_state
+      variable: 米拉.状态
+    - name: freya_affection
+      variable: 弗蕾亚.好感度
+    - name: freya_state
+      variable: 弗蕾亚.状态
+    - name: nia_affection
+      variable: 妮娅.好感度
+    - name: nia_state
+      variable: 妮娅.状态
+    - name: carmilla_affection
+      variable: 卡米拉.好感度
+    - name: carmilla_state
+      variable: 卡米拉.状态
+    - name: siren_affection
+      variable: 深潜者.好感度
+    - name: siren_state
+      variable: 深潜者.状态
+    - name: martha_affection
+      variable: 玛莎.好感度
+    - name: martha_state
+      variable: 玛莎.状态
+  entries:
+    - name: 尤克特拉希尔_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 第一章·警告期
+          condition: "goddess_corruption < 25"
+        - name: 第三章·幻痛期
+          condition: "goddess_corruption >= 25 && goddess_corruption < 50"
+        - name: 第五章·污染期
+          condition: "goddess_corruption >= 50 && goddess_corruption < 75"
+        - name: 最终战·臣服期
+          condition: "goddess_corruption >= 75"
+    - name: 游戏阶段指导
+      complexity: 段落控制
+      stages:
+        - name: 降临期
+          condition: "story_stage === '降临期'"
+        - name: 拯救期
+          condition: "story_stage === '拯救期'"
+        - name: 崛起期
+          condition: "story_stage === '崛起期'"
+        - name: 最终战
+          condition: "story_stage === '最终战'"
+    - name: 巴别塔下层泥沼区
+      complexity: 条目显隐
+      condition: "current_scene?.includes('泥沼') || current_scene?.includes('下层')"
+    - name: 巴别塔中层秩序之秤
+      complexity: 条目显隐
+      condition: "current_scene?.includes('中层') || current_scene?.includes('秩序之秤')"
+    - name: 巴别塔上层黄金环
+      complexity: 条目显隐
+      condition: "current_scene?.includes('上层') || current_scene?.includes('黄金环')"
+    - name: 叹息之森
+      complexity: 条目显隐
+      condition: "current_region?.includes('叹息之森')"
+    - name: 圣白王都
+      complexity: 条目显隐
+      condition: "current_region?.includes('圣白王都')"
+    - name: 猩红废土
+      complexity: 条目显隐
+      condition: "current_region?.includes('猩红废土')"
+    - name: 霜骸山脉
+      complexity: 条目显隐
+      condition: "current_region?.includes('霜骸山脉')"
+    - name: 赤星沙海
+      complexity: 条目显隐
+      condition: "current_region?.includes('赤星沙海')"
+    - name: 腐沼列岛
+      complexity: 条目显隐
+      condition: "current_region?.includes('腐沼列岛')"
+    - name: 深渊迷宫分层
+      complexity: 条目显隐
+      condition: "current_region?.includes('深渊迷宫')"
+
+first_messages:
+  - format: 叙事式
+    word_count: 500~700
+    output_path: 开场白/0.txt
+    scene: 巴别塔下层泥沼区，破败酒馆"老鼠洞"，清晨
+    opening_situation: |
+      你在一间散发着廉价酒精与铁锈味的破酒馆中醒来。作为穿越者，你比任何人都清楚——这个世界是你在前世速通了三百遍的黄油《阿刻罗狄亚》。
+      你知道每一个女主角的悲剧剧本，知道每一个Boss的弱点，更知道全部的底层漏洞。
+      窗外传来冒险者公会晨钟的响声，新的一天开始了。深渊巨口在城下张开黑暗的大口，各怀心思的女主角们正在各自的命运轨迹上走向绝望。
+      而你，这个撕裂了至高女神代码的第四天灾，只做一件事：
+      卡Bug，速通，打全结局。
+      完美白金——一个人都不能少。
+  - format: 叙事式
+    word_count: 300~500
+    output_path: 开场白/1.txt
+    scene: 可自定义起点——任意区域快速开局
+    opening_situation: |
+      你已经在这个世界待了一段时间。深渊的灵液气息、巴别塔的腐臭味、以及时不时在脑内响起的女神充满怒意的警告，都已成为日常。现在是时候选择你的下一个目标了——去救哪一位女主？去卡哪个Bug？或者，先去女神的神座上闹一闹？

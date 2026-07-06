@@ -1,0 +1,128 @@
+{
+  "projectName": "阿刻罗狄亚",
+  "worldbookName": "阿刻罗狄亚",
+  "form": "charactercard",
+  "mvu": true,
+  "entryManifest": {},
+  "typeLists": {
+    "before_char": [
+      "EJS预处理",
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "地理"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "阶段指导",
+      "事件",
+      "系统规则",
+      "MVU"
+    ]
+  },
+  "strategyThresholds": {
+    "角色": {
+      "basic": {
+        "threshold": 5,
+        "required": true
+      },
+      "other": {
+        "threshold": 2,
+        "required": false
+      },
+      "personality": {
+        "threshold": 2,
+        "required": true
+      },
+      "tri_faceted": {
+        "threshold": 2,
+        "required": false
+      }
+    },
+    "事件": 0,
+    "地理": {
+      "faction": {
+        "threshold": 4,
+        "required": false
+      },
+      "region": {
+        "threshold": 4,
+        "required": false
+      },
+      "scene": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "MVU": {
+      "initvar": {
+        "threshold": null,
+        "required": false
+      },
+      "output_format": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "update_rules": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "variable_list": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "NPC": 0,
+    "EJS预处理": "Infinity",
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "plot": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "世界观": "Infinity",
+    "阶段指导": "Infinity",
+    "系统规则": "Infinity"
+  },
+  "partOrder": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "地理": [
+      "region",
+      "scene",
+      "faction"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "",
+  "first_messages": [],
+  "creator": "",
+  "creator_notes": "",
+  "version": "1.0",
+  "create_date": "2026-07-06T08:20:01.471Z"
+}

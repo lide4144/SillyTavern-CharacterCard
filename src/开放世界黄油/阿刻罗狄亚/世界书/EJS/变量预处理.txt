@@ -1,0 +1,28 @@
+@@generate_before
+<%_
+define('current_region', getvar('stat_data.世界.当前区域', { defaults: '' }));
+define('current_scene', getvar('stat_data.世界.当前场景', { defaults: '' }));
+define('story_stage', getvar('stat_data.世界.剧情阶段', { defaults: '降临期' }));
+define('goddess_corruption', getvar('stat_data.世界.女神污染度', { defaults: 0 }));
+define('player_level', getvar('stat_data.主角.等级', { defaults: 1 }));
+define('glitch_tier', getvar('stat_data.主角.邪道等级', { defaults: 0 }));
+define('corruption', getvar('stat_data.主角.侵蚀度', { defaults: 0 }));
+define('silvia_affection', getvar('stat_data.西尔维娅.好感度', { defaults: 0 }));
+define('silvia_state', getvar('stat_data.西尔维娅.状态', { defaults: '未相遇' }));
+define('ilya_affection', getvar('stat_data.伊莉雅.好感度', { defaults: 0 }));
+define('ilya_state', getvar('stat_data.伊莉雅.状态', { defaults: '未相遇' }));
+define('chloe_affection', getvar('stat_data.克洛伊.好感度', { defaults: 0 }));
+define('chloe_state', getvar('stat_data.克洛伊.状态', { defaults: '未相遇' }));
+define('mira_affection', getvar('stat_data.米拉.好感度', { defaults: 0 }));
+define('mira_state', getvar('stat_data.米拉.状态', { defaults: '未相遇' }));
+define('freya_affection', getvar('stat_data.弗蕾亚.好感度', { defaults: 0 }));
+define('freya_state', getvar('stat_data.弗蕾亚.状态', { defaults: '未相遇' }));
+define('nia_affection', getvar('stat_data.妮娅.好感度', { defaults: 0 }));
+define('nia_state', getvar('stat_data.妮娅.状态', { defaults: '未相遇' }));
+define('carmilla_affection', getvar('stat_data.卡米拉.好感度', { defaults: 0 }));
+define('carmilla_state', getvar('stat_data.卡米拉.状态', { defaults: '未相遇' }));
+define('siren_affection', getvar('stat_data.深潜者.好感度', { defaults: 0 }));
+define('siren_state', getvar('stat_data.深潜者.状态', { defaults: '未相遇' }));
+define('martha_affection', getvar('stat_data.玛莎.好感度', { defaults: 0 }));
+define('martha_state', getvar('stat_data.玛莎.状态', { defaults: '未相遇' }));
+_%>
