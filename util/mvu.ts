@@ -20,14 +20,22 @@ export function defineMvuDataStore<T extends z.ZodObject>(
       .join('.')}`,
     errorCatched(() => {
       const data = ref(
+<<<<<<< HEAD
         schema.parse(_.get(getVariables(variable_option), 'stat_data'), { reportInput: true }),
+=======
+        schema.parse(_.get(getVariables(variable_option), 'stat_data', {}), { reportInput: true }),
+>>>>>>> 299b9bb0dd0e1b9c9863f20ca4cbc261e552bdd5
       ) as Ref<z.infer<T>>;
       if (additional_setup) {
         additional_setup(data);
       }
 
       useIntervalFn(() => {
+<<<<<<< HEAD
         const stat_data = _.get(getVariables(variable_option), 'stat_data');
+=======
+        const stat_data = _.get(getVariables(variable_option), 'stat_data', {});
+>>>>>>> 299b9bb0dd0e1b9c9863f20ca4cbc261e552bdd5
         const result = schema.safeParse(stat_data);
         if (result.error) {
           return;
