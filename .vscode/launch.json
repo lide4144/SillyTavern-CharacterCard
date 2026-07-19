@@ -7,7 +7,11 @@
       "request": "launch",
       "preLaunchTask": "开始任务",
       "postDebugTask": "结束任务",
+<<<<<<< HEAD
       "url": "http://192.168.0.117:8000",
+=======
+      "url": "http://localhost:8000",
+>>>>>>> a4d60f52b8b1b0f872a80088ba7e339b0933eeb2
       "disableNetworkCache": true,
       "internalConsoleOptions": "neverOpen",
       "cwd": "${workspaceFolder}",
@@ -27,7 +31,11 @@
       "request": "launch",
       "preLaunchTask": "开始任务",
       "postDebugTask": "结束任务",
+<<<<<<< HEAD
       "url": "http://192.168.0.117:8000",
+=======
+      "url": "http://localhost:8000",
+>>>>>>> a4d60f52b8b1b0f872a80088ba7e339b0933eeb2
       "disableNetworkCache": true,
       "internalConsoleOptions": "neverOpen",
       "cwd": "${workspaceFolder}",
@@ -45,7 +53,11 @@
       "name": "仅调试酒馆网页 (Chrome)",
       "type": "chrome",
       "request": "launch",
+<<<<<<< HEAD
       "url": "http://192.168.0.117:8000",
+=======
+      "url": "http://localhost:8000",
+>>>>>>> a4d60f52b8b1b0f872a80088ba7e339b0933eeb2
       "disableNetworkCache": true,
       "internalConsoleOptions": "neverOpen",
       "cwd": "${workspaceFolder}",
@@ -63,7 +75,11 @@
       "name": "仅调试酒馆网页 (Edge)",
       "type": "msedge",
       "request": "launch",
+<<<<<<< HEAD
       "url": "http://192.168.0.117:8000",
+=======
+      "url": "http://localhost:8000",
+>>>>>>> a4d60f52b8b1b0f872a80088ba7e339b0933eeb2
       "disableNetworkCache": true,
       "internalConsoleOptions": "neverOpen",
       "cwd": "${workspaceFolder}",
